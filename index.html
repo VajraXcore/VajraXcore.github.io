@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>VajraX — Network. Security. Toolkit.</title>
-  <meta name="description" content="VajraX: 36 professional networking tools for Android engineers. 100% offline. Zero tracking. Zero paywalls.">
+  <meta name="description" content="VajraX v2.0 — Professional Network & Security Toolkit. 68 tools for Android engineers. 100% offline. Zero tracking.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
@@ -130,6 +130,9 @@
     .p-ok { display:inline-block; font-family:var(--mono); font-size:6px; color:var(--green); background:rgba(34,197,94,.12); border-radius:3px; padding:1px 4px; }
     .p-warn { display:inline-block; font-family:var(--mono); font-size:6px; color:var(--gold); background:rgba(255,179,0,.12); border-radius:3px; padding:1px 4px; }
     .shot-lbl { text-align:center; margin-top:10px; font-size:12px; font-weight:600; color:var(--muted); }
+    .shot-img { width:100%; height:100%; object-fit:cover; object-position:top center; border-radius:30px; }
+    .shots-group-title { text-align:center; font-family:var(--mono); font-size:13px; font-weight:700; color:var(--gold); letter-spacing:.08em; text-transform:uppercase; margin:0 0 32px; }
+    .shots-group-title.v1 { color:var(--dim); margin-top:64px; }
 
     /* ── TOOLS ── */
     #tools { background:var(--bg); }
@@ -320,12 +323,12 @@
     <div class="hero-full-overlay">
       <div class="hero-full-cta">
         <span class="hero-badge">
-          ⚡ v1.0.0 — Now Available on Android
+          ⚡ v2.0.0 — Professional Network & Security Toolkit
         </span>
         <div class="hero-btn-row">
-          <a href="https://github.com/VajraXcore/VajraX_Release/releases/latest/download/VajraX-v1.0.0.apk"
+          <a href="https://github.com/VajraXcore/VajraX_Release_2.0/releases/latest/download/VajraX-v2.0.0.apk"
              class="btn-download" target="_blank" rel="noopener">
-            ↓ Download APK — Free
+            ↓ Download v2.0 APK — Free
           </a>
           <a href="#tools" class="btn-explore">
             Explore Tools →
@@ -342,14 +345,14 @@
 <div id="stats">
   <div class="wrap" style="padding:0 24px">
     <div class="stats-row">
-      <div class="stat fade-in"><div class="sv">6</div><div class="sl">Modules</div></div>
-      <div class="stat fade-in d1"><div class="sv">36</div><div class="sl">Tools</div></div>
+      <div class="stat fade-in"><div class="sv">5</div><div class="sl">New Engines</div></div>
+      <div class="stat fade-in d1"><div class="sv">68</div><div class="sl">Tools</div></div>
       <div class="stat fade-in d2"><div class="sv">600+</div><div class="sl">Ports</div></div>
       <div class="stat fade-in d3"><div class="sv">500+</div><div class="sl">RFCs</div></div>
       <div class="stat fade-in d4"><div class="sv">100%</div><div class="sl">Offline</div></div>
       <div class="stat fade-in d5"><div class="sv">0</div><div class="sl">Tracking</div></div>
       <div class="stat fade-in d6"><div class="sv">0</div><div class="sl">Root Needed</div></div>
-      <div class="stat fade-in d6"><div class="sv">3 MB</div><div class="sl">APK Size</div></div>
+      <div class="stat fade-in d6"><div class="sv">4.52 MB</div><div class="sl">APK Size</div></div>
     </div>
   </div>
 </div>
@@ -371,7 +374,7 @@
           <tr><td>Works without internet</td><td><span class="pt">&#9888; Partial</span></td><td><span class="ok">&#10003; Always</span></td></tr>
           <tr><td>No account required</td><td><span class="no">&#10007; Login required</span></td><td><span class="ok">&#10003; Zero signup</span></td></tr>
           <tr><td>No analytics or tracking</td><td><span class="no">&#10007; Tracked</span></td><td><span class="ok">&#10003; Zero telemetry</span></td></tr>
-          <tr><td>No paywalled features</td><td><span class="no">&#10007; Pro tier needed</span></td><td><span class="ok">&#10003; All 36 tools free</span></td></tr>
+          <tr><td>No paywalled features</td><td><span class="no">&#10007; Pro tier needed</span></td><td><span class="ok">&#10003; All 68 tools free</span></td></tr>
           <tr><td>CCNP/CCIE-depth accuracy</td><td><span class="pt">&#9888; Basic only</span></td><td><span class="ok">&#10003; RFC-verified</span></td></tr>
           <tr><td>Export to PDF / CSV / JSON</td><td><span class="no">&#10007; Cloud export</span></td><td><span class="ok">&#10003; On-device</span></td></tr>
           <tr><td>Minimum Android version</td><td><span class="pt">Android 10+</span></td><td><span class="ok">&#10003; Android 8.0+</span></td></tr>
@@ -390,12 +393,14 @@
       <h2 class="h2">Everything you need.<br>Nothing you don&rsquo;t.</h2>
     </div>
     <div class="feat-grid">
-      <div class="feat fade-in d1"><div class="feat-ico">&#128268;</div><div class="feat-t">36 Professional Tools</div><p class="feat-d">VLSM, IPv6, MTU, ACL, SSL, VLAN, Zero Trust, and more &mdash; all free, no paywalls, no accounts.</p></div>
-      <div class="feat fade-in d2"><div class="feat-ico">&#128225;</div><div class="feat-t">Live Network Diagnostics</div><p class="feat-d">Network Scanner, DNS Lookup, Ping &amp; Traceroute, and SSL Inspector with real-time results.</p></div>
+      <div class="feat fade-in d1"><div class="feat-ico">&#128268;</div><div class="feat-t">68 Professional Tools</div><p class="feat-d">VLSM, IPv6, MTU, ACL, VXLAN, PMK, VLAN, Zero Trust, and more &mdash; all free, no paywalls, no accounts.</p></div>
+      <div class="feat fade-in d2"><div class="feat-ico">&#128225;</div><div class="feat-t">Live Network Diagnostics</div><p class="feat-d">SSH Terminal, SNMP Browser Pro, WiFi Analyzer Pro, Network Scanner Pro, and Advanced Ping &amp; Traceroute with real-time results.</p></div>
       <div class="feat fade-in d3"><div class="feat-ico">&#128196;</div><div class="feat-t">Export to PDF / CSV / JSON</div><p class="feat-d">Generate professional reports on-device. Share with clients or teams instantly, no cloud needed.</p></div>
       <div class="feat fade-in d1"><div class="feat-ico">&#128218;</div><div class="feat-t">600+ Ports &middot; 500+ RFCs</div><p class="feat-d">Complete offline reference: port database with CVEs, RFC index, protocol cheat sheets, cable guides.</p></div>
       <div class="feat fade-in d2"><div class="feat-ico">&#128737;</div><div class="feat-t">Security-First Design</div><p class="feat-d">Compliance Checker for PCI-DSS, NIST, HIPAA, ISO 27001. Zero Trust Validator against NIST SP 800-207.</p></div>
       <div class="feat fade-in d3"><div class="feat-ico">&#128269;</div><div class="feat-t">Universal Search</div><p class="feat-d">Find any tool in milliseconds. Search by plain English: &ldquo;assign IP&rdquo;, &ldquo;block traffic&rdquo;, &ldquo;ospf cost&rdquo;.</p></div>
+      <div class="feat fade-in d1"><div class="feat-ico">&#128203;</div><div class="feat-t">6-Layer Output Standard</div><p class="feat-d">Every tool outputs structured results across 6 layers: Summary, Technical Detail, Visual, Export, Cross-links, and Recommendations.</p></div>
+      <div class="feat fade-in d2"><div class="feat-ico">&#128190;</div><div class="feat-t">Dual Export Engine</div><p class="feat-d">Export to both HTML and PDF directly on-device. Professional reports ready for clients or documentation.</p></div>
     </div>
   </div>
 </section>
@@ -408,272 +413,69 @@
       <h2 class="h2">Precision UI.<br>Built for the field.</h2>
       <p class="sub" style="margin:0 auto">Dark-first Material Design 3. Optimized for one-handed use in the field.</p>
     </div>
-    <div class="shots-grid">
 
-      <!-- PHONE 1 — HOME SCREEN -->
+    <div class="shots-group-title">VajraX v2.0</div>
+    <div class="shots-grid">
       <div class="fade-in d1">
-        <div class="phone">
-          <div class="p-notch"><div class="p-dot"></div></div>
-          <div class="p-screen">
-            <!-- Header row -->
-            <div style="display:flex;justify-content:space-between;align-items:flex-start;border-bottom:1px solid rgba(0,212,255,.12);padding-bottom:5px;margin-bottom:1px">
-              <div>
-                <div style="font-family:var(--mono);font-size:9px;font-weight:700;color:#00D4FF">VajraX</div>
-                <div style="font-family:var(--mono);font-size:4.5px;color:#8899AA;margin-top:1px">v1.0.0 &mdash; Network &middot; Security &middot; Toolkit</div>
-              </div>
-              <div style="display:flex;align-items:center;gap:3px">
-                <span style="background:rgba(34,197,94,.15);border:1px solid rgba(34,197,94,.3);border-radius:6px;padding:1px 3px;font-family:var(--mono);font-size:4px;color:#22c55e">&#10003; Healthy &middot; Online</span>
-                <span style="font-size:7px;color:#8899AA">&#9881;</span>
-              </div>
-            </div>
-            <!-- Search bar -->
-            <div style="display:flex;align-items:center;gap:4px;background:rgba(255,255,255,.04);border:1px solid rgba(0,212,255,.12);border-radius:7px;padding:4px 6px">
-              <span style="font-family:var(--mono);font-size:7px;color:#8899AA">&#128269;</span>
-              <span style="font-family:var(--mono);font-size:4.5px;color:#4A5568">Search tools: 'assign IP', 'ospf'...</span>
-            </div>
-            <!-- Professional Mode toggle -->
-            <div style="display:flex;align-items:center;gap:5px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);border-radius:5px;padding:4px 5px">
-              <span style="font-size:9px">&#128187;</span>
-              <div style="flex:1">
-                <div style="font-family:var(--mono);font-size:6px;color:#FFF;font-weight:700">Professional Mode</div>
-                <div style="font-family:var(--mono);font-size:4.5px;color:#8899AA">Show raw bit operations</div>
-              </div>
-              <div style="width:18px;height:9px;background:#1a2e48;border-radius:5px;flex-shrink:0"></div>
-            </div>
-            <!-- System Health card -->
-            <div style="background:rgba(34,197,94,.05);border:1px solid rgba(34,197,94,.2);border-radius:5px;padding:4px 5px">
-              <div style="font-family:var(--mono);font-size:4.5px;color:#8899AA;margin-bottom:2px">System Health</div>
-              <div style="display:flex;align-items:center;gap:3px">
-                <span style="width:5px;height:5px;background:#22c55e;border-radius:50%;display:inline-block;flex-shrink:0"></span>
-                <span style="font-family:var(--mono);font-size:5.5px;color:#22c55e">All systems operational</span>
-              </div>
-              <div style="font-family:var(--mono);font-size:4px;color:#4A5568;margin-top:1px">Last checked: 2026-06-22 00:07:59</div>
-            </div>
-            <!-- Quick Launch label -->
-            <div style="font-family:var(--mono);font-size:6px;color:#FFF;font-weight:500">Quick Launch</div>
-            <!-- 2x3 grid -->
-            <div style="display:grid;grid-template-columns:1fr 1fr;gap:3px">
-              <div style="background:rgba(0,212,255,.06);border:1px solid rgba(0,212,255,.12);border-radius:5px;padding:5px 3px;text-align:center">
-                <div style="font-size:9px">&#127760;</div>
-                <div style="font-family:var(--mono);font-size:4.5px;color:#8899AA">Subnet Hub</div>
-              </div>
-              <div style="background:rgba(0,212,255,.06);border:1px solid rgba(0,212,255,.12);border-radius:5px;padding:5px 3px;text-align:center">
-                <div style="font-size:9px">&#128292;</div>
-                <div style="font-family:var(--mono);font-size:4.5px;color:#8899AA">VLSM Planner</div>
-              </div>
-              <div style="background:rgba(0,212,255,.06);border:1px solid rgba(0,212,255,.12);border-radius:5px;padding:5px 3px;text-align:center">
-                <div style="font-size:9px">&#128311;</div>
-                <div style="font-family:var(--mono);font-size:4.5px;color:#8899AA">IPv6 Suite</div>
-              </div>
-              <div style="background:rgba(0,212,255,.06);border:1px solid rgba(0,212,255,.12);border-radius:5px;padding:5px 3px;text-align:center">
-                <div style="font-size:9px">&#128225;</div>
-                <div style="font-family:var(--mono);font-size:4.5px;color:#8899AA">Port Refer..</div>
-              </div>
-              <div style="background:rgba(0,212,255,.06);border:1px solid rgba(0,212,255,.12);border-radius:5px;padding:5px 3px;text-align:center">
-                <div style="font-size:9px">&#128269;</div>
-                <div style="font-family:var(--mono);font-size:4.5px;color:#8899AA">MAC Lookup</div>
-              </div>
-              <div style="background:rgba(0,212,255,.06);border:1px solid rgba(0,212,255,.12);border-radius:5px;padding:5px 3px;text-align:center">
-                <div style="font-size:9px">&#127758;</div>
-                <div style="font-family:var(--mono);font-size:4.5px;color:#8899AA">DNS Lookup</div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div class="phone"><img class="shot-img" src="screenshots/v2/IMG_20260704_232543.jpg" alt="VajraX v2.0 home screen — 68 tools across 5 new engines"></div>
+        <div class="shot-lbl">Home &middot; 68 Tools, 5 New Engines</div>
+      </div>
+      <div class="fade-in d2">
+        <div class="phone"><img class="shot-img" src="screenshots/v2/IMG_20260704_132709.jpg" alt="Fabric Architect engine — 9 tools"></div>
+        <div class="shot-lbl">Fabric Architect &middot; 9 Tools</div>
+      </div>
+      <div class="fade-in d3">
+        <div class="phone"><img class="shot-img" src="screenshots/v2/IMG_20260704_132741.jpg" alt="Config Intelligence engine — 6 tools"></div>
+        <div class="shot-lbl">Config Intelligence &middot; 6 Tools</div>
+      </div>
+      <div class="fade-in d1">
+        <div class="phone"><img class="shot-img" src="screenshots/v2/IMG_20260704_132730.jpg" alt="Live Network Ops engine — 7 live tools"></div>
+        <div class="shot-lbl">Live Network Ops &middot; 7 Live Tools</div>
+      </div>
+      <div class="fade-in d2">
+        <div class="phone"><img class="shot-img" src="screenshots/v2/IMG_20260704_132719.jpg" alt="The Architect Engine — network design and IP calculation tools"></div>
+        <div class="shot-lbl">The Architect Engine</div>
+      </div>
+      <div class="fade-in d3">
+        <div class="phone"><img class="shot-img" src="screenshots/v2/IMG_20260704_132815.jpg" alt="The Automate Engine — multi-vendor config generation and protocol calculation"></div>
+        <div class="shot-lbl">The Automate Engine</div>
+      </div>
+      <div class="fade-in d1">
+        <div class="phone"><img class="shot-img" src="screenshots/v2/IMG_20260704_132752.jpg" alt="The Command Center — live network diagnostics"></div>
+        <div class="shot-lbl">The Command Center</div>
+      </div>
+      <div class="fade-in d2">
+        <div class="phone"><img class="shot-img" src="screenshots/v2/IMG_20260704_132802.jpg" alt="Solutions — end-to-end design tools"></div>
+        <div class="shot-lbl">Solutions</div>
+      </div>
+    </div>
+
+    <div class="shots-group-title v1">VajraX v1.0 (Legacy)</div>
+    <div class="shots-grid">
+      <div class="fade-in d1">
+        <div class="phone"><img class="shot-img" src="screenshots/v1/IMG_20260629_183555.jpg" alt="VajraX v1.0 home screen — Quick Launch"></div>
         <div class="shot-lbl">Home &middot; Quick Launch</div>
       </div>
-
-      <!-- PHONE 2 — ARMORY SCREEN -->
       <div class="fade-in d2">
-        <div class="phone">
-          <div class="p-notch"><div class="p-dot"></div></div>
-          <div class="p-screen">
-            <!-- Module header -->
-            <div style="display:flex;gap:5px;align-items:flex-start;border-bottom:1px solid rgba(0,212,255,.12);padding-bottom:5px;margin-bottom:2px">
-              <div style="width:26px;height:26px;background:rgba(0,164,155,.15);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:12px;flex-shrink:0">&#128295;</div>
-              <div>
-                <div style="font-family:var(--mono);font-size:8px;font-weight:700;color:#00D4FF">The Armory</div>
-                <div style="font-family:var(--mono);font-size:4.5px;color:#8899AA;margin-top:1px;line-height:1.4">Reference databases: cables, OUI/MAC, ports &amp; CVEs</div>
-              </div>
-            </div>
-            <!-- Card 1: Cable Guide -->
-            <div style="display:flex;gap:4px;align-items:flex-start;background:rgba(0,212,255,.04);border:1px solid rgba(0,212,255,.1);border-radius:5px;padding:4px 5px">
-              <div style="width:18px;height:18px;background:rgba(0,212,255,.1);border-radius:3px;display:flex;align-items:center;justify-content:center;font-size:8px;flex-shrink:0">&#128203;</div>
-              <div>
-                <div style="font-family:var(--mono);font-size:6.5px;color:#FFF;font-weight:700">Cable Guide</div>
-                <div style="font-family:var(--mono);font-size:4.5px;color:#8899AA;line-height:1.3;margin-top:1px">T568A/B pinouts, crossover, rollover, category specs...</div>
-              </div>
-            </div>
-            <!-- Card 2: MAC / OUI Lookup -->
-            <div style="display:flex;gap:4px;align-items:flex-start;background:rgba(0,212,255,.04);border:1px solid rgba(0,212,255,.1);border-radius:5px;padding:4px 5px">
-              <div style="width:18px;height:18px;background:rgba(0,212,255,.1);border-radius:3px;display:flex;align-items:center;justify-content:center;font-size:8px;flex-shrink:0">&#128225;</div>
-              <div>
-                <div style="font-family:var(--mono);font-size:6.5px;color:#FFF;font-weight:700">MAC / OUI Lookup</div>
-                <div style="font-family:var(--mono);font-size:4.5px;color:#8899AA;line-height:1.3;margin-top:1px">Identify vendor from MAC, detect randomized MACs...</div>
-              </div>
-            </div>
-            <!-- Card 3: Port Reference -->
-            <div style="display:flex;gap:4px;align-items:flex-start;background:rgba(0,212,255,.04);border:1px solid rgba(0,212,255,.1);border-radius:5px;padding:4px 5px">
-              <div style="width:18px;height:18px;background:rgba(0,212,255,.1);border-radius:3px;display:flex;align-items:center;justify-content:center;font-size:8px;flex-shrink:0">&#9776;</div>
-              <div>
-                <div style="font-family:var(--mono);font-size:6.5px;color:#FFF;font-weight:700">Port Reference</div>
-                <div style="font-family:var(--mono);font-size:4.5px;color:#8899AA;line-height:1.3;margin-top:1px">300+ ports, service names, RFCs, risk ratings...</div>
-              </div>
-            </div>
-            <!-- Card 4: Field Options -->
-            <div style="display:flex;gap:4px;align-items:flex-start;background:rgba(0,212,255,.04);border:1px solid rgba(0,212,255,.1);border-radius:5px;padding:4px 5px">
-              <div style="width:18px;height:18px;background:rgba(0,212,255,.1);border-radius:3px;display:flex;align-items:center;justify-content:center;font-size:8px;flex-shrink:0">&#128196;</div>
-              <div>
-                <div style="font-family:var(--mono);font-size:6.5px;color:#FFF;font-weight:700">Field Options</div>
-                <div style="font-family:var(--mono);font-size:4.5px;color:#8899AA;line-height:1.3;margin-top:1px">T568A/B pinout, cable categories, subnet quick-ref...</div>
-              </div>
-            </div>
-            <!-- Card 5: Protocol Cheat Sheet -->
-            <div style="display:flex;gap:4px;align-items:flex-start;background:rgba(0,212,255,.04);border:1px solid rgba(0,212,255,.1);border-radius:5px;padding:4px 5px">
-              <div style="width:18px;height:18px;background:rgba(0,212,255,.1);border-radius:3px;display:flex;align-items:center;justify-content:center;font-size:8px;flex-shrink:0">&#10697;</div>
-              <div>
-                <div style="font-family:var(--mono);font-size:6.5px;color:#FFF;font-weight:700">Protocol Cheat Sheet</div>
-                <div style="font-family:var(--mono);font-size:4.5px;color:#8899AA;line-height:1.3;margin-top:1px">TCP flags &middot; ICMP types/codes &middot; EtherType values...</div>
-              </div>
-            </div>
-            <!-- Info card -->
-            <div style="background:rgba(0,212,255,.04);border:1px solid rgba(0,212,255,.1);border-radius:5px;padding:5px 6px;margin-top:auto">
-              <div style="font-family:var(--mono);font-size:6px;color:#FFF">All tools work offline</div>
-              <div style="font-family:var(--mono);font-size:4.5px;color:#8899AA;margin-top:1px;line-height:1.3">The Armory is static &mdash; no network required. Data bundled with app.</div>
-            </div>
-          </div>
-        </div>
-        <div class="shot-lbl">Armory &middot; Reference Database</div>
+        <div class="phone"><img class="shot-img" src="screenshots/v1/IMG_20260629_183612.jpg" alt="The Architect Engine — v1.0"></div>
+        <div class="shot-lbl">The Architect Engine</div>
       </div>
-
-      <!-- PHONE 3 — COMMAND CENTER SCREEN -->
       <div class="fade-in d3">
-        <div class="phone">
-          <div class="p-notch"><div class="p-dot"></div></div>
-          <div class="p-screen">
-            <!-- Module header -->
-            <div style="display:flex;gap:5px;align-items:flex-start;border-bottom:1px solid rgba(0,212,255,.12);padding-bottom:5px;margin-bottom:2px">
-              <div style="width:26px;height:26px;background:rgba(0,164,155,.15);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:12px;flex-shrink:0">&#128396;</div>
-              <div>
-                <div style="font-family:var(--mono);font-size:7.5px;font-weight:700;color:#00D4FF">Command Center</div>
-                <div style="font-family:var(--mono);font-size:4.5px;color:#8899AA;margin-top:1px;line-height:1.4">Live diagnostics: scan, DNS, ping, SSL, config diff</div>
-              </div>
-            </div>
-            <!-- Card 1: Network Scanner -->
-            <div style="display:flex;gap:4px;align-items:center;background:rgba(0,212,255,.04);border:1px solid rgba(0,212,255,.1);border-radius:5px;padding:4px 5px">
-              <div style="width:18px;height:18px;background:rgba(0,212,255,.1);border-radius:3px;display:flex;align-items:center;justify-content:center;font-size:8px;flex-shrink:0">&#128225;</div>
-              <div style="flex:1">
-                <div style="font-family:var(--mono);font-size:6px;color:#FFF;font-weight:700">Network Scanner</div>
-                <div style="font-family:var(--mono);font-size:4.5px;color:#8899AA">Discover live hosts on subnet...</div>
-              </div>
-              <span style="font-size:6px;color:#00D4FF;flex-shrink:0">&#128246;</span>
-            </div>
-            <!-- Card 2: DNS Lookup -->
-            <div style="display:flex;gap:4px;align-items:center;background:rgba(0,212,255,.04);border:1px solid rgba(0,212,255,.1);border-radius:5px;padding:4px 5px">
-              <div style="width:18px;height:18px;background:rgba(0,212,255,.1);border-radius:3px;display:flex;align-items:center;justify-content:center;font-size:8px;flex-shrink:0">&#128256;</div>
-              <div style="flex:1">
-                <div style="font-family:var(--mono);font-size:6px;color:#FFF;font-weight:700">DNS Lookup</div>
-                <div style="font-family:var(--mono);font-size:4.5px;color:#8899AA">A, AAAA, MX, NS, CNAME, TXT, PTR...</div>
-              </div>
-              <span style="font-size:6px;color:#00D4FF;flex-shrink:0">&#128246;</span>
-            </div>
-            <!-- Card 3: Ping -->
-            <div style="display:flex;gap:4px;align-items:center;background:rgba(0,212,255,.04);border:1px solid rgba(0,212,255,.1);border-radius:5px;padding:4px 5px">
-              <div style="width:18px;height:18px;background:rgba(0,212,255,.1);border-radius:3px;display:flex;align-items:center;justify-content:center;font-size:8px;flex-shrink:0">&#128268;</div>
-              <div style="flex:1">
-                <div style="font-family:var(--mono);font-size:6px;color:#FFF;font-weight:700">Ping &amp; Connectivity</div>
-                <div style="font-family:var(--mono);font-size:4.5px;color:#8899AA">ICMP reachability, RTT, packet loss...</div>
-              </div>
-              <span style="font-size:6px;color:#00D4FF;flex-shrink:0">&#128246;</span>
-            </div>
-            <!-- Card 4: SSL Inspector -->
-            <div style="display:flex;gap:4px;align-items:center;background:rgba(0,212,255,.04);border:1px solid rgba(0,212,255,.1);border-radius:5px;padding:4px 5px">
-              <div style="width:18px;height:18px;background:rgba(0,212,255,.1);border-radius:3px;display:flex;align-items:center;justify-content:center;font-size:8px;flex-shrink:0">&#128274;</div>
-              <div style="flex:1">
-                <div style="font-family:var(--mono);font-size:6px;color:#FFF;font-weight:700">SSL Inspector</div>
-                <div style="font-family:var(--mono);font-size:4.5px;color:#8899AA">TLS certs: expiry, cipher, issuer, SAN...</div>
-              </div>
-              <span style="font-size:6px;color:#00D4FF;flex-shrink:0">&#128246;</span>
-            </div>
-            <!-- Card 5: Config Diff -->
-            <div style="display:flex;gap:4px;align-items:center;background:rgba(0,212,255,.04);border:1px solid rgba(0,212,255,.1);border-radius:5px;padding:4px 5px">
-              <div style="width:18px;height:18px;background:rgba(0,212,255,.1);border-radius:3px;display:flex;align-items:center;justify-content:center;font-size:8px;flex-shrink:0">&#10542;</div>
-              <div style="flex:1">
-                <div style="font-family:var(--mono);font-size:6px;color:#FFF;font-weight:700">Config Diff</div>
-                <div style="font-family:var(--mono);font-size:4.5px;color:#8899AA">LCS-based diff with risk assessment...</div>
-              </div>
-            </div>
-            <!-- Card 6: Hash Generator -->
-            <div style="display:flex;gap:4px;align-items:center;background:rgba(0,212,255,.04);border:1px solid rgba(0,212,255,.1);border-radius:5px;padding:4px 5px">
-              <div style="width:18px;height:18px;background:rgba(0,212,255,.1);border-radius:3px;display:flex;align-items:center;justify-content:center;font-size:8px;flex-shrink:0">#</div>
-              <div style="flex:1">
-                <div style="font-family:var(--mono);font-size:6px;color:#FFF;font-weight:700">Hash Generator</div>
-                <div style="font-family:var(--mono);font-size:4.5px;color:#8899AA">MD5 &middot; SHA-1 &middot; SHA-256 &middot; SHA-512...</div>
-              </div>
-            </div>
-            <!-- Warning card -->
-            <div style="background:rgba(255,179,0,.06);border:1px solid rgba(255,179,0,.2);border-radius:5px;padding:4px 5px;margin-top:auto">
-              <div style="font-family:var(--mono);font-size:5.5px;color:#FFB300;font-weight:700">Network tools require internet</div>
-              <div style="font-family:var(--mono);font-size:4.5px;color:#8899AA;margin-top:1px;line-height:1.3">Scanner, DNS, Ping &amp; SSL send live packets or queries.</div>
-            </div>
-          </div>
-        </div>
-        <div class="shot-lbl">Command &middot; Live Diagnostics</div>
+        <div class="phone"><img class="shot-img" src="screenshots/v1/IMG_20260629_183626.jpg" alt="The Automate Engine — v1.0"></div>
+        <div class="shot-lbl">The Automate Engine</div>
       </div>
-
-      <!-- PHONE 4 — SOLUTIONS SCREEN -->
-      <div class="fade-in d4">
-        <div class="phone">
-          <div class="p-notch"><div class="p-dot"></div></div>
-          <div class="p-screen">
-            <!-- Module header -->
-            <div style="display:flex;gap:5px;align-items:flex-start;border-bottom:1px solid rgba(0,212,255,.12);padding-bottom:5px;margin-bottom:2px">
-              <div style="width:26px;height:26px;background:rgba(0,164,155,.15);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:12px;flex-shrink:0">&#9699;</div>
-              <div>
-                <div style="font-family:var(--mono);font-size:8px;font-weight:700;color:#00D4FF">Solutions</div>
-                <div style="font-family:var(--mono);font-size:4.5px;color:#8899AA;margin-top:1px;line-height:1.4">End-to-end design: CCTV, PoE, fiber, VLAN, ZeroTrust</div>
-              </div>
-            </div>
-            <!-- Card 1: IP Camera Planner -->
-            <div style="display:flex;gap:4px;align-items:flex-start;background:rgba(0,212,255,.04);border:1px solid rgba(0,212,255,.1);border-radius:4px;padding:3px 5px">
-              <div style="width:16px;height:16px;background:rgba(0,212,255,.1);border-radius:3px;display:flex;align-items:center;justify-content:center;font-size:7px;flex-shrink:0">&#128247;</div>
-              <div><div style="font-family:var(--mono);font-size:6px;color:#FFF;font-weight:700">IP Camera Planner</div><div style="font-family:var(--mono);font-size:4px;color:#8899AA">Full CCTV: bandwidth, storage, NVR, PoE, VLAN...</div></div>
-            </div>
-            <!-- Card 2: CCTV Storage -->
-            <div style="display:flex;gap:4px;align-items:flex-start;background:rgba(0,212,255,.04);border:1px solid rgba(0,212,255,.1);border-radius:4px;padding:3px 5px">
-              <div style="width:16px;height:16px;background:rgba(0,212,255,.1);border-radius:3px;display:flex;align-items:center;justify-content:center;font-size:7px;flex-shrink:0">&#128190;</div>
-              <div><div style="font-family:var(--mono);font-size:6px;color:#FFF;font-weight:700">CCTV Storage Calc</div><div style="font-family:var(--mono);font-size:4px;color:#8899AA">Multi-camera storage, retention, TB estimate...</div></div>
-            </div>
-            <!-- Card 3: PoE Budget -->
-            <div style="display:flex;gap:4px;align-items:flex-start;background:rgba(0,212,255,.04);border:1px solid rgba(0,212,255,.1);border-radius:4px;padding:3px 5px">
-              <div style="width:16px;height:16px;background:rgba(0,212,255,.1);border-radius:3px;display:flex;align-items:center;justify-content:center;font-size:7px;flex-shrink:0">&#9889;</div>
-              <div><div style="font-family:var(--mono);font-size:6px;color:#FFF;font-weight:700">PoE Budget Planner</div><div style="font-family:var(--mono);font-size:4px;color:#8899AA">Switch PoE budget, wattage, utilization %...</div></div>
-            </div>
-            <!-- Card 4: Fiber Power -->
-            <div style="display:flex;gap:4px;align-items:flex-start;background:rgba(0,212,255,.04);border:1px solid rgba(0,212,255,.1);border-radius:4px;padding:3px 5px">
-              <div style="width:16px;height:16px;background:rgba(0,212,255,.1);border-radius:3px;display:flex;align-items:center;justify-content:center;font-size:7px;flex-shrink:0">&#128305;</div>
-              <div><div style="font-family:var(--mono);font-size:6px;color:#FFF;font-weight:700">Fiber Power Budget</div><div style="font-family:var(--mono);font-size:4px;color:#8899AA">Optical link budget, attenuation, splices...</div></div>
-            </div>
-            <!-- Card 5: VLAN Architect -->
-            <div style="display:flex;gap:4px;align-items:flex-start;background:rgba(0,212,255,.04);border:1px solid rgba(0,212,255,.1);border-radius:4px;padding:3px 5px">
-              <div style="width:16px;height:16px;background:rgba(0,212,255,.1);border-radius:3px;display:flex;align-items:center;justify-content:center;font-size:7px;flex-shrink:0">&#128259;</div>
-              <div><div style="font-family:var(--mono);font-size:6px;color:#FFF;font-weight:700">VLAN Architect</div><div style="font-family:var(--mono);font-size:4px;color:#8899AA">VLAN scheme, switch configs, inter-VLAN routing...</div></div>
-            </div>
-            <!-- Card 6: Compliance Checker -->
-            <div style="display:flex;gap:4px;align-items:flex-start;background:rgba(0,212,255,.04);border:1px solid rgba(0,212,255,.1);border-radius:4px;padding:3px 5px">
-              <div style="width:16px;height:16px;background:rgba(0,212,255,.1);border-radius:3px;display:flex;align-items:center;justify-content:center;font-size:7px;flex-shrink:0">&#10003;</div>
-              <div><div style="font-family:var(--mono);font-size:6px;color:#FFF;font-weight:700">Compliance Checker</div><div style="font-family:var(--mono);font-size:4px;color:#8899AA">PCI-DSS, NIST CSF, ISO 27001, HIPAA, CIS...</div></div>
-            </div>
-            <!-- Card 7: Zero Trust Validator -->
-            <div style="display:flex;gap:4px;align-items:flex-start;background:rgba(0,212,255,.04);border:1px solid rgba(0,212,255,.1);border-radius:4px;padding:3px 5px">
-              <div style="width:16px;height:16px;background:rgba(0,212,255,.1);border-radius:3px;display:flex;align-items:center;justify-content:center;font-size:7px;flex-shrink:0">&#128737;</div>
-              <div><div style="font-family:var(--mono);font-size:6px;color:#FFF;font-weight:700">Zero Trust Validator</div><div style="font-family:var(--mono);font-size:4px;color:#8899AA">8 NIST SP 800-207 ZTA principles, gap analysis...</div></div>
-            </div>
-          </div>
-        </div>
-        <div class="shot-lbl">Solutions &middot; End-to-End Design</div>
+      <div class="fade-in d1">
+        <div class="phone"><img class="shot-img" src="screenshots/v1/IMG_20260629_183640.jpg" alt="The Armory — reference database, v1.0"></div>
+        <div class="shot-lbl">The Armory</div>
       </div>
-
+      <div class="fade-in d2">
+        <div class="phone"><img class="shot-img" src="screenshots/v1/IMG_20260629_183650.jpg" alt="The Command Center — v1.0"></div>
+        <div class="shot-lbl">The Command Center</div>
+      </div>
+      <div class="fade-in d3">
+        <div class="phone"><img class="shot-img" src="screenshots/v1/IMG_20260629_183706.jpg" alt="Solutions — v1.0"></div>
+        <div class="shot-lbl">Solutions</div>
+      </div>
     </div>
   </div>
 </section>
@@ -682,26 +484,53 @@
 <section id="tools">
   <div class="wrap">
     <div class="fade-in">
-      <div class="lbl">// All 36 Tools</div>
-      <h2 class="h2">Six modules.<br>Every tool you need.</h2>
-      <p class="sub">From subnet planning to zero trust validation &mdash; organized into focused modules that match your workflow.</p>
+      <div class="lbl">// All 68 Tools</div>
+      <h2 class="h2">68 Tools. Eleven modules.<br>Every tool you need.</h2>
+      <p class="sub">From subnet planning to EVPN-VXLAN fabric design &mdash; organized into focused modules that match your workflow.</p>
     </div>
+
+    <div class="lbl" style="margin-top:48px">// v2.0 Engines &mdash; 37 New Tools</div>
+    <div class="mod-grid">
+      <div class="mod fade-in d1">
+        <div class="mod-hd"><div class="mod-ico" style="background:rgba(0,212,255,.1)">&#128376;</div><div><div class="mod-name">Fabric Architect</div><div class="mod-cnt">9 tools &middot; Enterprise network fabric design</div></div></div>
+        <ul class="tlist"><li>VXLAN MTU Calculator</li><li>TCP Window Scaling Modeler</li><li>AWS/Azure CIDR Carver</li><li>Route-Target &amp; RD Planner</li><li>EVPN-VXLAN Fabric Designer</li><li>Spine-Leaf Underlay Designer</li><li>BGP Path Analyzer Pro</li><li>SD-WAN Policy Calculator</li><li>WireGuard Config Generator</li></ul>
+      </div>
+      <div class="mod fade-in d2">
+        <div class="mod-hd"><div class="mod-ico" style="background:rgba(255,179,0,.1)">&#128202;</div><div><div class="mod-name">Config Intelligence</div><div class="mod-cnt">6 tools &middot; Configuration analysis &amp; management</div></div></div>
+        <ul class="tlist"><li>Config Analyzer</li><li>Config Template Engine</li><li>Multi-Vendor Translator Pro</li><li>Config Vault &mdash; AES-256-GCM encrypted</li><li>Regex Filter Engine</li><li>Config Diff Pro</li></ul>
+      </div>
+      <div class="mod fade-in d3">
+        <div class="mod-hd"><div class="mod-ico" style="background:rgba(239,68,68,.1)">&#128737;</div><div><div class="mod-name">Security Ops Center</div><div class="mod-cnt">9 tools &middot; Security operations &amp; analysis</div></div></div>
+        <ul class="tlist"><li>Zero Trust Architecture Planner Pro</li><li>Firewall Policy Analyzer</li><li>CVE Explorer Pro</li><li>Log Parser &amp; Analyzer</li><li>IP Reputation &amp; Threat Intel</li><li>Certificate Chain Analyzer Pro</li><li>Compliance Auditor Pro</li><li>WPA3/WPA2 PMK Calculator</li><li>DNSSEC Chain Validator</li></ul>
+      </div>
+      <div class="mod fade-in d1">
+        <div class="mod-hd"><div class="mod-ico" style="background:rgba(34,197,94,.1)">&#128246;</div><div><div class="mod-name">Live Network Ops</div><div class="mod-cnt">7 live tools &middot; Requires network connectivity</div></div></div>
+        <ul class="tlist"><li>SSH Terminal</li><li>SNMP Browser Pro</li><li>WiFi Analyzer Pro</li><li>Network Scanner Pro</li><li>Speed Test</li><li>Wake-on-LAN Pro</li><li>Advanced Ping &amp; Traceroute</li></ul>
+      </div>
+      <div class="mod fade-in d2">
+        <div class="mod-hd"><div class="mod-ico" style="background:rgba(168,85,247,.1)">&#128225;</div><div><div class="mod-name">Protocol Deep Dive</div><div class="mod-cnt">6 tools &middot; Advanced protocol calculators</div></div></div>
+        <ul class="tlist"><li>Protocol Lab Pro</li><li>RFC Browser</li><li>Multi-Vendor Command Reference Pro</li><li>Encoder Toolkit</li><li>Bitsmith Sandbox</li><li>Hex Packet Decoder</li></ul>
+      </div>
+    </div>
+
+    <div class="lbl" style="margin-top:48px">// v1.0 Foundation &mdash; 31 Tools (All Upgraded)</div>
+    <p class="sub" style="margin-bottom:24px">All 31 v1.0 tools upgraded with 6-layer output and dual HTML/PDF export in v2.0. Five original tools (Tactical Manual, Network Scanner, Ping &amp; Traceroute, SSL Inspector, Config Diff) were superseded by their Pro replacements above.</p>
     <div class="mod-grid">
       <div class="mod fade-in d1">
         <div class="mod-hd"><div class="mod-ico" style="background:rgba(0,212,255,.1)">&#127959;</div><div><div class="mod-name">The Architect Engine</div><div class="mod-cnt">14 tools &middot; Network design &amp; IP calculation</div></div></div>
         <ul class="tlist"><li>VLSM Planner</li><li>Subnet Hub</li><li>Subnet Troubleshooter</li><li>Network ID Architect</li><li>Route Summarizer</li><li>IPv6 Suite</li><li>IP Converter</li><li>CIDR Cheat Sheet</li><li>Binary Heart</li><li>Reverse VLSM</li><li>MTU/MSS Planner</li><li>Bandwidth Calculator</li><li>ACL Generator</li><li>IPv6 PD Planner</li></ul>
       </div>
       <div class="mod fade-in d2">
-        <div class="mod-hd"><div class="mod-ico" style="background:rgba(255,179,0,.1)">&#9881;</div><div><div class="mod-name">Automate</div><div class="mod-cnt">3 tools &middot; Config generation &amp; protocol analysis</div></div></div>
-        <ul class="tlist"><li>Universal Translator &mdash; Cisco &#8596; Juniper &#8596; Aruba</li><li>Protocol Lab &mdash; OSPF &middot; EIGRP &middot; BGP calculator</li><li>Tactical Manual &mdash; 500+ CLI command reference</li></ul>
+        <div class="mod-hd"><div class="mod-ico" style="background:rgba(255,179,0,.1)">&#9881;</div><div><div class="mod-name">Automate</div><div class="mod-cnt">2 tools &middot; Config generation &amp; protocol analysis</div></div></div>
+        <ul class="tlist"><li>Universal Translator &mdash; Cisco &#8596; Juniper &#8596; Aruba</li><li>Protocol Lab &mdash; OSPF &middot; EIGRP &middot; BGP calculator</li></ul>
       </div>
       <div class="mod fade-in d3">
         <div class="mod-hd"><div class="mod-ico" style="background:rgba(34,197,94,.1)">&#128451;</div><div><div class="mod-name">Armory</div><div class="mod-cnt">5 tools &middot; Reference library</div></div></div>
-        <ul class="tlist"><li>Cable Wiring Guide &mdash; T568A/B, crossover, console</li><li>MAC OUI Lookup &mdash; vendor database</li><li>Port Reference &mdash; 600+ ports with CVEs</li><li>Infrastructure Field Guide</li><li>Protocol Cheat Sheets &mdash; IEEE 802.x, TCP/IP</li></ul>
+        <ul class="tlist"><li>Cable Wiring Guide &mdash; T568A/B, crossover, console</li><li>MAC OUI Lookup &mdash; vendor database</li><li>Port Reference &mdash; 600+ ports with CVEs</li><li>Field Options &mdash; quick reference</li><li>Protocol Cheat Sheet &mdash; IEEE 802.x, TCP/IP</li></ul>
       </div>
       <div class="mod fade-in d1">
-        <div class="mod-hd"><div class="mod-ico" style="background:rgba(239,68,68,.1)">&#128225;</div><div><div class="mod-name">Command Center</div><div class="mod-cnt">6 tools &middot; Live network diagnostics</div></div></div>
-        <ul class="tlist"><li>Network Scanner</li><li>DNS Lookup &mdash; A, AAAA, MX, NS, TXT, PTR</li><li>Ping &amp; Connectivity</li><li>SSL Inspector &mdash; TLS cert, cipher, SAN</li><li>Config Diff &mdash; LCS-based risk assessment</li><li>Hash Generator &mdash; MD5, SHA-1/256/512</li></ul>
+        <div class="mod-hd"><div class="mod-ico" style="background:rgba(239,68,68,.1)">&#128225;</div><div><div class="mod-name">Command Center</div><div class="mod-cnt">2 tools &middot; Live network diagnostics</div></div></div>
+        <ul class="tlist"><li>DNS Lookup &mdash; A, AAAA, MX, NS, TXT, PTR</li><li>Hash Generator &mdash; MD5, SHA-1/256/512</li></ul>
       </div>
       <div class="mod fade-in d2">
         <div class="mod-hd"><div class="mod-ico" style="background:rgba(168,85,247,.1)">&#127970;</div><div><div class="mod-name">Solutions</div><div class="mod-cnt">8 tools &middot; End-to-end design</div></div></div>
@@ -709,7 +538,7 @@
       </div>
       <div class="mod fade-in d3" style="border-color:var(--border-g)">
         <div class="mod-hd"><div class="mod-ico" style="background:rgba(255,179,0,.1)">&#127968;</div><div><div class="mod-name">Home</div><div class="mod-cnt">Smart hub &middot; Search &amp; quick access</div></div></div>
-        <ul class="tlist"><li>Universal Search &mdash; plain English queries</li><li>Quick Launch &mdash; 6 pinned tools</li><li>System Health Monitor</li><li>Professional Mode &mdash; raw bit operations</li></ul>
+        <ul class="tlist"><li>Universal Search &mdash; plain English queries</li><li>Quick Launch &mdash; pinned tools</li><li>System Health Monitor</li><li>Professional Mode &mdash; raw bit operations</li></ul>
       </div>
     </div>
   </div>
@@ -722,11 +551,11 @@
       <div class="fade-in">
         <div class="lbl">// Offline First</div>
         <h2 class="h2">Works in a data center.<br>Works in a bunker.</h2>
-        <p class="sub" style="margin-bottom:32px">29 of 36 tools are 100% offline. No cloud. No API keys. 7 tools optionally connect for live diagnostics &mdash; always your choice.</p>
+        <p class="sub" style="margin-bottom:32px">61 of 68 tools are 100% offline. No cloud. No API keys. The 7 Live Network Ops tools optionally connect for live diagnostics &mdash; always your choice.</p>
         <ul class="off-pts">
           <li class="off-pt"><div class="off-ico">&#9889;</div><div><div class="off-pt-t">Instant &mdash; zero network calls</div><div class="off-pt-d">Subnet calculations, IPv6, VLSM, ACL generation &mdash; all local, all instant.</div></div></li>
           <li class="off-pt"><div class="off-ico">&#9992;</div><div><div class="off-pt-t">Airplane mode ready</div><div class="off-pt-d">Works on a plane, in a secure facility, or anywhere with no connectivity.</div></div></li>
-          <li class="off-pt"><div class="off-ico">&#128230;</div><div><div class="off-pt-t">Everything bundled &mdash; 3 MB APK</div><div class="off-pt-d">600+ ports, 500+ RFCs, cable pinouts, MAC database &mdash; all inside the APK.</div></div></li>
+          <li class="off-pt"><div class="off-ico">&#128230;</div><div><div class="off-pt-t">Everything bundled &mdash; 4.52 MB APK</div><div class="off-pt-d">600+ ports, 500+ RFCs, cable pinouts, MAC database &mdash; all inside the APK.</div></div></li>
         </ul>
       </div>
       <div class="fade-in d2">
@@ -766,7 +595,7 @@
       <div class="priv fade-in d3"><div class="priv-ck">&#10003;</div><div class="priv-tx">No account or login required</div></div>
       <div class="priv fade-in d1"><div class="priv-ck">&#10003;</div><div class="priv-tx">All calculations run entirely on-device</div></div>
       <div class="priv fade-in d2"><div class="priv-ck">&#10003;</div><div class="priv-tx">No root access required &mdash; ever</div></div>
-      <div class="priv fade-in d3"><div class="priv-ck">&#10003;</div><div class="priv-tx">Open source &mdash; audit the code yourself</div></div>
+      <div class="priv fade-in d3"><div class="priv-ck">&#10003;</div><div class="priv-tx">VajraX is proprietary software. Source code is maintained in a private repository. For security audit inquiries, contact <a href="mailto:pbr65.tech@gmail.com" style="color:var(--blue)">pbr65.tech@gmail.com</a>.</div></div>
     </div>
   </div>
 </section>
@@ -783,8 +612,8 @@
         <div class="lbl" style="margin-bottom:14px">Device requirements</div>
         <div class="spec-tbl">
           <div class="spec-r"><span class="spec-lbl">Min Android version</span><span class="spec-val">Android 8.0 (API 26)</span></div>
-          <div class="spec-r"><span class="spec-lbl">Target SDK</span><span class="spec-val">Android 14 (API 34)</span></div>
-          <div class="spec-r"><span class="spec-lbl">APK size</span><span class="spec-val">~3 MB</span></div>
+          <div class="spec-r"><span class="spec-lbl">Target SDK</span><span class="spec-val">Android 15 (API 35)</span></div>
+          <div class="spec-r"><span class="spec-lbl">APK size</span><span class="spec-val">~4.52 MB</span></div>
           <div class="spec-r"><span class="spec-lbl">Architecture</span><span class="spec-val">ARM64 &middot; ARM32 &middot; x86_64</span></div>
           <div class="spec-r"><span class="spec-lbl">Root required</span><span class="spec-val">Never</span></div>
           <div class="spec-r"><span class="spec-lbl">Permissions</span><span class="spec-val">Internet (optional)</span></div>
@@ -796,7 +625,7 @@
         <div class="steps">
           <div class="step"><div class="step-n">1</div><div><div class="step-t">Download the APK</div><div class="step-d">Tap the Download button and save <code style="font-family:var(--mono);color:var(--blue)">app-release.apk</code> to your device.</div></div></div>
           <div class="step"><div class="step-n">2</div><div><div class="step-t">Enable unknown sources</div><div class="step-d">Settings &rarr; Security &rarr; Allow installation from unknown sources (or from your browser).</div></div></div>
-          <div class="step"><div class="step-n">3</div><div><div class="step-t">Install and launch</div><div class="step-d">Open the APK, tap Install, and launch VajraX. All 36 tools are unlocked immediately.</div></div></div>
+          <div class="step"><div class="step-n">3</div><div><div class="step-t">Install and launch</div><div class="step-d">Open the APK, tap Install, and launch VajraX. All 68 tools are unlocked immediately.</div></div></div>
         </div>
       </div>
     </div>
@@ -808,9 +637,52 @@
   <div class="wrap">
     <div class="fade-in">
       <div class="lbl">// Changelog</div>
-      <h2 class="h2">What&rsquo;s new in VajraX 1.0.0</h2>
+      <h2 class="h2">What&rsquo;s new in VajraX</h2>
     </div>
     <div class="cl-box fade-in d1">
+      <div class="cl-hd">
+        <div><div class="cl-ver">v2.0.0</div><div class="cl-dt">July 2026 &middot; Major Release</div></div>
+        <div class="cl-badge">CURRENT</div>
+      </div>
+      <div class="cl-body">
+        <div>
+          <div class="cl-sec-t">// New Engines</div>
+          <ul class="cl-list">
+            <li>Fabric Architect: EVPN-VXLAN Fabric Designer, Spine-Leaf Underlay Designer, BGP Path Analyzer Pro, WireGuard Config Generator</li>
+            <li>Config Intelligence: Config Analyzer, Config Vault (AES-256-GCM), Config Template Engine</li>
+            <li>Security Ops Center: WPA3/WPA2 PMK Calculator, DNSSEC Chain Validator, Firewall Policy Analyzer, Certificate Chain Analyzer Pro</li>
+            <li>Live Network Ops: SSH Terminal, SNMP Browser Pro, WiFi Analyzer Pro</li>
+            <li>Protocol Deep Dive: Protocol Lab Pro, RFC Browser, Hex Packet Decoder, Multi-Vendor Command Reference Pro</li>
+          </ul>
+        </div>
+        <div>
+          <div class="cl-sec-t">// Upgrades</div>
+          <ul class="cl-list">
+            <li>20 v1.0 tools upgraded with full 6-layer output standard</li>
+            <li>11 v1.0 tools upgraded with export and cross-linking improvements</li>
+            <li>Dual HTML/PDF export engine across all tools</li>
+          </ul>
+        </div>
+        <div>
+          <div class="cl-sec-t">// Technical</div>
+          <ul class="cl-list">
+            <li>Signed: RSA-4096, APK Signature Scheme v2</li>
+            <li>Target SDK 35, Min SDK 26 (Android 8.0+)</li>
+            <li>APK size: ~4.52 MB</li>
+          </ul>
+        </div>
+        <div>
+          <div class="cl-sec-t">// Known Limitations</div>
+          <ul class="cl-list">
+            <li>Route Summarizer returns /32 for single-route input</li>
+            <li>VLSM Deaggregator clamps to /30</li>
+            <li>K8s CNI Policy Generator and full SD-WAN Overlay Designer not included</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="cl-box fade-in d2" style="margin-top:24px">
       <div class="cl-hd">
         <div><div class="cl-ver">v1.0.0</div><div class="cl-dt">June 2026 &middot; Initial Release</div></div>
         <div class="cl-badge">STABLE</div>
@@ -863,18 +735,18 @@
     <div class="rm-grid">
       <div class="rm fade-in d1">
         <div class="rm-ver">v1.0.0</div><div class="rm-eta">June 2026</div>
-        <div class="rm-status s-now">CURRENT</div>
-        <div class="rm-t">Foundation Release</div>
+        <div class="rm-status s-fut">RELEASED</div>
+        <div class="rm-t">Foundation Release (31 tools)</div>
       </div>
       <div class="rm fade-in d2">
-        <div class="rm-ver">v1.1</div><div class="rm-eta">Q3 2026</div>
-        <div class="rm-status s-next">NEXT</div>
-        <div class="rm-t">More tools. More depth. Community-driven.</div>
+        <div class="rm-ver">v2.0.0</div><div class="rm-eta">July 2026</div>
+        <div class="rm-status s-now">CURRENT</div>
+        <div class="rm-t">5 new engines, 68 tools, 6-layer output, dual export</div>
       </div>
       <div class="rm fade-in d3">
-        <div class="rm-ver">v2.0</div><div class="rm-eta">2027</div>
-        <div class="rm-status s-fut">PLANNED</div>
-        <div class="rm-t">VajraX Platform. Cross-platform. More powerful.</div>
+        <div class="rm-ver">v2.1.0</div><div class="rm-eta">Upcoming</div>
+        <div class="rm-status s-next">UPCOMING</div>
+        <div class="rm-t">Windows version (C# + WinUI 3)</div>
       </div>
     </div>
   </div>
@@ -884,18 +756,22 @@
 <section id="download">
   <div class="wrap">
     <div class="dl-wrap fade-in">
-      <div class="dl-badge">&#9889; v1.0.0 &middot; Signed Release APK &middot; 3 MB</div>
+      <div class="dl-badge">&#9889; v2.0.0 &middot; Signed Release APK &middot; 4.52 MB</div>
       <h2 class="dl-h">Get <span>VajraX</span><br>completely free.</h2>
       <p class="dl-sub">No account. No credit card. No trial. Install and start working.</p>
       <div class="dl-btns">
-        <a href="https://github.com/VajraXcore/VajraX_Release/releases/latest/download/VajraX-v1.0.0.apk" class="btn-dl" target="_blank" rel="noopener">&#8595; Download APK from GitHub</a>
-        <a href="https://github.com/VajraXcore/VajraX_Android" class="btn-s" target="_blank" rel="noopener">&#9733; Star on GitHub</a>
+        <a href="https://github.com/VajraXcore/VajraX_Release_2.0/releases/latest/download/VajraX-v2.0.0.apk" class="btn-dl" target="_blank" rel="noopener">&#8595; Download v2.0 APK from GitHub</a>
+        <a href="https://github.com/VajraXcore/VajraX_Release/releases/latest/download/VajraX-v1.0.0.apk" class="btn-s" target="_blank" rel="noopener">&#8595; Download v1.0 (legacy)</a>
+      </div>
+      <div class="ft-links" style="justify-content:center;margin-top:20px">
+        <a href="https://github.com/VajraXcore/VajraX_Release_2.0" target="_blank" rel="noopener">v2.0 Release Repo</a>
+        <a href="https://github.com/VajraXcore/VajraX_Release" target="_blank" rel="noopener">v1.0 Release Repo</a>
       </div>
       <div class="dl-meta">
         <span>Signed RSA-4096</span>
+        <span>APK Signature Scheme v2</span>
         <span>Android 8.0+ (API 26+)</span>
-        <span>3 MB APK</span>
-        <span>Open source</span>
+        <span>4.52 MB APK</span>
       </div>
     </div>
   </div>
@@ -908,16 +784,16 @@
       <div class="fade-in">
         <div class="lbl">// Contact</div>
         <h2 class="h2">Got a bug?<br>Got an idea?</h2>
-        <p class="sub">VajraX is built by one engineer, used by many. Every bug report and feature request gets read. The best ideas ship in the next version.</p>
+        <p class="sub">Every bug report and feature request gets read. The best ideas ship in the next version.</p>
       </div>
       <div class="con-links fade-in d2">
         <a href="mailto:pbr65.tech@gmail.com" class="con-link">
           <div class="con-ico">&#9993;</div>
           <div><div class="con-lbl">Email</div><div class="con-val">pbr65.tech@gmail.com</div></div>
         </a>
-        <a href="https://github.com/VajraXcore/VajraX_Android/issues" class="con-link" target="_blank" rel="noopener">
+        <a href="mailto:pbr65.tech@gmail.com?subject=VajraX%20Bug%20Report%20%2F%20Feature%20Request" class="con-link">
           <div class="con-ico">&#128027;</div>
-          <div><div class="con-lbl">Bug Reports &amp; Feature Requests</div><div class="con-val">GitHub Issues</div></div>
+          <div><div class="con-lbl">Bug Reports &amp; Feature Requests</div><div class="con-val">pbr65.tech@gmail.com</div></div>
         </a>
       </div>
     </div>
@@ -931,7 +807,7 @@
       <img src="Final_logo/Brand_banner_final.png" alt="VajraX" class="ft-brand-img">
     </div>
     <div class="ft-bottom">
-      <span class="ft-copy">&copy; 2026 VajraX &mdash; Network. Security. Toolkit.</span>
+      <span class="ft-copy">VajraX &mdash; Network. Security. Toolkit.</span>
       <div class="ft-links">
         <a href="#why">Why VajraX</a>
         <a href="#tools">Tools</a>
@@ -942,8 +818,7 @@
       </div>
     </div>
     <div class="copyright">
-      <p>&copy; 2026 VajraX. All rights reserved. Built by engineers, for engineers.</p>
-      <p>Not affiliated with any vendor or organization.</p>
+      <p>&copy; 2026 VajraXcore. All rights reserved. VajraX is proprietary software provided free of charge for personal and professional use.</p>
     </div>
   </div>
 </footer>

@@ -7,12 +7,12 @@
 
 **Professional-grade offline networking and cybersecurity toolkit for Android**
 
-[![Version](https://img.shields.io/badge/version-1.0.0-00D4FF?style=for-the-badge)](https://vajrax.in)
+[![Version](https://img.shields.io/badge/version-2.0.0-00D4FF?style=for-the-badge)](https://vajrax.in)
 [![Platform](https://img.shields.io/badge/platform-Android%208.0%2B-FFB300?style=for-the-badge)](https://vajrax.in)
 [![License](https://img.shields.io/badge/license-Free-00D4FF?style=for-the-badge)](https://vajrax.in)
-[![Size](https://img.shields.io/badge/size-3%20MB-FFB300?style=for-the-badge)](https://vajrax.in)
+[![Size](https://img.shields.io/badge/size-4.52%20MB-FFB300?style=for-the-badge)](https://vajrax.in)
 
-[⬇️ Download VajraX v1.0.0](https://vajrax.in/VajraX_v1.0.0.apk) | [🌐 Website](https://vajrax.in) | [📧 Contact](mailto:pbr65.tech@gmail.com)
+[⬇️ Download VajraX v2.0.0](https://github.com/VajraXcore/VajraX_Release_2.0/releases/latest/download/VajraX-v2.0.0.apk) | [🌐 Website](https://vajrax.in) | [📧 Contact](mailto:pbr65.tech@gmail.com)
 
 </div>
 
@@ -32,13 +32,17 @@ precision, power, and reliability in every tool.
 
 ## 📱 Download
 
-**[⬇️ Download VajraX v1.0.0 APK](https://vajrax.in/VajraX_v1.0.0.apk)**
+**[⬇️ Download VajraX v2.0.0 APK](https://github.com/VajraXcore/VajraX_Release_2.0/releases/latest/download/VajraX-v2.0.0.apk)**
 
-- **Version:** 1.0.0
-- **Size:** 3 MB
+Also available: [VajraX v1.0.0 (legacy)](https://github.com/VajraXcore/VajraX_Release/releases/latest/download/VajraX-v1.0.0.apk)
+
+- **Version:** 2.0.0
+- **Size:** 4.52 MB
 - **Platform:** Android 8.0+ (API 26)
+- **Target SDK:** 35
 - **Root required:** No
-- **Internet required:** No
+- **Internet required:** Optional — needed only for the 7 Live Network Ops tools
+- **Signing:** Signed with RSA-4096, APK Signature Scheme v2
 
 **How to install:**
 1. Download the APK
@@ -50,55 +54,39 @@ precision, power, and reliability in every tool.
 
 ## ✨ Features
 
-### 6 Modules — 29 Professional Tools
+### 68 Tools — 5 New Engines (v2.0) + 31 Foundation Tools (v1.0)
 
-**🏗️ ARCHITECT**
-- Subnet Calculator & Hub
-- VLSM Planner (multi-tier, cloud provider modes)
-- IPv6 Suite (EUI-64, prefix analysis)
-- Route Summarizer (black-hole detection)
-- IP Converter (binary/hex/decimal)
-- MAC/OUI Lookup (vendor identification)
+**🕸️ FABRIC ARCHITECT** (9 tools)
+VXLAN MTU Calculator, TCP Window Scaling Modeler, AWS/Azure CIDR Carver, Route-Target & RD Planner, EVPN-VXLAN Fabric Designer, Spine-Leaf Underlay Designer, BGP Path Analyzer Pro, SD-WAN Policy Calculator, WireGuard Config Generator
 
-**⚙️ AUTOMATE**
-- Protocol Lab (OSPF cost, EIGRP feasibility)
-- BGP Community Calculator (AA:NN, RFC 8092)
-- IPv6 Prefix Delegation Planner
-- VLAN Architect (switch config generator)
-- Redundancy Planner (HSRP/VRRP/GLBP)
-- PoE Planner
+**📊 CONFIG INTELLIGENCE** (6 tools)
+Config Analyzer, Config Template Engine, Multi-Vendor Translator Pro, Config Vault (AES-256-GCM encrypted), Regex Filter Engine, Config Diff Pro
 
-**🛡️ ARMORY**
-- ACL Generator (Cisco IOS, JunOS, NX-OS)
-- Hash Generator (MD5, SHA-1, SHA-256, SHA-512)
-- SSL Inspector (full chain + cipher suite analyzer)
-- Payload Converter (arbitrary hex/binary/ASCII)
-- Protocol Cheat Sheets (TCP flags, ICMP, EtherType)
-- Port Reference (600+ ports with CVE data)
+**🛡️ SECURITY OPS CENTER** (9 tools)
+Zero Trust Architecture Planner Pro, Firewall Policy Analyzer, CVE Explorer Pro, Log Parser & Analyzer, IP Reputation & Threat Intel, Certificate Chain Analyzer Pro, Compliance Auditor Pro, WPA3/WPA2 PMK Calculator, DNSSEC Chain Validator
 
-**⌨️ COMMAND**
-- Network Scanner (parallel /24 scan)
-- DNS Lookup (A, AAAA, MX, NS, CNAME, TXT, PTR)
-- Ping & Connectivity (RTT + packet loss)
-- Config Diff (LCS-based with risk assessment)
-- Hash Generator
-- SSL Certificate Inspector
+**📶 LIVE NETWORK OPS** (7 live tools)
+SSH Terminal, SNMP Browser Pro, WiFi Analyzer Pro, Network Scanner Pro, Speed Test, Wake-on-LAN Pro, Advanced Ping & Traceroute
 
-**📊 SOLUTIONS**
-- IP Camera / CCTV Planner
-- CCTV Storage Calculator
-- PoE Budget Planner
-- Fiber Power Budget
-- Compliance Checker (PCI-DSS, NIST, ISO 27001)
-- Zero Trust Validator (NIST SP 800-207)
+**📡 PROTOCOL DEEP DIVE** (6 tools)
+Protocol Lab Pro, RFC Browser, Multi-Vendor Command Reference Pro, Encoder Toolkit, Bitsmith Sandbox, Hex Packet Decoder
 
-**📚 REFERENCE**
-- Port Reference Database (600+ ports)
-- CVE Reference per Port
-- RFC Index (500+ networking RFCs)
-- Cable Guide (T568A/B, categories)
-- Field Options Quick Reference
-- Cisco IOS Command Reference
+**🏗️ ARCHITECT** (14 tools, v1.0 foundation)
+VLSM Planner, Subnet Hub, Subnet Troubleshooter, Network ID Architect, Route Summarizer, IPv6 Suite, IP Converter, CIDR Cheat Sheet, Binary Heart, Reverse VLSM, MTU/MSS Planner, Bandwidth Calculator, ACL Generator, IPv6 PD Planner
+
+**⚙️ AUTOMATE** (2 tools, v1.0 foundation)
+Universal Translator, Protocol Lab
+
+**🛠️ ARMORY** (5 tools, v1.0 foundation)
+Cable Wiring Guide, MAC OUI Lookup, Port Reference, Field Options, Protocol Cheat Sheet
+
+**⌨️ COMMAND** (2 tools, v1.0 foundation)
+DNS Lookup, Hash Generator
+
+**📊 SOLUTIONS** (8 tools, v1.0 foundation)
+IP Camera Planner, CCTV Storage Calculator, PoE Budget Planner, Fiber Power Budget, VLAN Architect, Compliance Checker (PCI-DSS, NIST, ISO 27001), Zero Trust Validator (NIST SP 800-207), Redundancy Planner (HSRP/VRRP)
+
+All 31 v1.0 tools were upgraded with 6-layer output and dual HTML/PDF export in v2.0. Five original v1.0 tools (Tactical Manual, Network Scanner, Ping & Traceroute, SSL Inspector, Config Diff) were superseded by their Pro replacements above.
 
 ---
 
@@ -112,7 +100,7 @@ VajraX is built on a zero-trust privacy model:
 - ✅ **Zero cloud sync** — nothing leaves your device
 - ✅ **No account required** — install and use immediately
 - ✅ **Minimal permissions** — only INTERNET + ACCESS_NETWORK_STATE
-  (required for live network tools: Scanner, DNS, Ping, SSL)
+  (required for the 7 Live Network Ops tools: SSH Terminal, SNMP Browser Pro, WiFi Analyzer Pro, Network Scanner Pro, Speed Test, Wake-on-LAN Pro, Advanced Ping & Traceroute)
 
 What you calculate in VajraX stays in VajraX.
 
@@ -123,9 +111,10 @@ What you calculate in VajraX stays in VajraX.
 | Requirement | Details |
 |---|---|
 | Android Version | 8.0+ (API 26) |
-| Storage | 3 MB |
+| Target SDK | 35 |
+| Storage | 4.52 MB |
 | Root | Not required |
-| Internet | Not required for 22/29 tools |
+| Internet | Optional — 61 of 68 tools are 100% offline |
 | Permissions | INTERNET, ACCESS_NETWORK_STATE only |
 
 ---
@@ -134,9 +123,9 @@ What you calculate in VajraX stays in VajraX.
 
 | Version | Status | Highlights |
 |---|---|---|
-| v1.0.0 | ✅ Released | 29 tools, full offline suite |
-| v1.1.0 | 🔄 Planned | Community-requested features |
-| v2.0.0 | 🔄 Planned | VajraX Platform — expanded suite |
+| v1.0.0 | ✅ Released (June 2026) | Foundation Release, 31 tools |
+| v2.0.0 | ✅ Current (July 2026) | 5 new engines, 68 tools, 6-layer output, dual export |
+| v2.1.0 | 🔄 Upcoming | Windows version (C# + WinUI 3) |
 
 ---
 
@@ -151,16 +140,15 @@ What you calculate in VajraX stays in VajraX.
 
 ## ⚖️ Legal
 
-**Copyright © 2026 VajraX. All rights reserved.**
+**Copyright © 2026 VajraXcore. All rights reserved.**
 
-VajraX is an independent product. Not affiliated with, endorsed by,
-or associated with Cisco Systems, Juniper Networks, or any other
-vendor or organization.
+VajraX is proprietary software, provided free of charge for personal
+and professional use. Not affiliated with, endorsed by, or associated
+with Cisco Systems, Juniper Networks, or any other vendor or organization.
 
 All product names, logos, and brands mentioned are property of
 their respective owners.
 
-VajraX is provided free of charge for personal and professional use.
 Redistribution of the APK without permission is prohibited.
 
 See [Privacy Policy](https://vajrax.in#privacy) for full details.
@@ -170,8 +158,6 @@ See [Privacy Policy](https://vajrax.in#privacy) for full details.
 <div align="center">
 
 **VajraX — Network • Security • Toolkit**
-
-*Built by engineers, for engineers.*
 
 [vajrax.in](https://vajrax.in) | [pbr65.tech@gmail.com](mailto:pbr65.tech@gmail.com)
 
