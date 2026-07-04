@@ -9,12 +9,12 @@
   <meta property="og:description" content="VajraX v2.0 — Professional Network & Security Toolkit. 68 tools for network engineers, cybersecurity professionals, and CCNA/CCNP candidates. 100% offline. Zero tracking.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://vajrax.in">
-  <meta property="og:image" content="https://vajrax.in/images/vajrax-og-banner.jpg">
+  <meta property="og:image" content="https://vajrax.in/images/vajrax-og-banner-social.png">
   <meta property="og:locale" content="en_US">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="VajraX — Free Network & Security Toolkit | 68 Offline Tools">
   <meta name="twitter:description" content="VajraX v2.0 — 68 tools for network engineers, cybersecurity professionals, and CCNA/CCNP candidates. 100% offline. Zero tracking.">
-  <meta name="twitter:image" content="https://vajrax.in/images/vajrax-og-banner.jpg">
+  <meta name="twitter:image" content="https://vajrax.in/images/vajrax-og-banner-social.png">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -110,9 +110,9 @@
     .hero { background:var(--bg); min-height:90vh; margin:0; padding:0 60px; display:flex; align-items:center; justify-content:space-between; gap:40px; }
     .hero-content { max-width:55%; }
     .hero-content h1 { color:#fff; font-weight:900; font-size:clamp(1.8rem,4vw,3rem); line-height:1.15; margin:0; }
-    .hero-sub { font-size:clamp(0.95rem,1.5vw,1.15rem); color:var(--muted); max-width:600px; margin-top:1.5rem; line-height:1.6; }
+    .hero-sub { font-size:clamp(0.95rem,1.5vw,1.15rem); color:var(--muted); max-width:600px; margin-top:1.5rem; line-height:1.7; }
     .hero-cta { margin-top:2rem; display:flex; gap:1rem; flex-wrap:wrap; }
-    .hero-image { max-width:45%; display:flex; align-items:center; justify-content:center; }
+    .hero-image { max-width:45%; display:flex; align-items:center; justify-content:center; padding-right:2rem; }
     .hero-image img { max-width:100%; max-height:80vh; object-fit:contain; }
     .btn-primary { background:var(--blue); color:#000000 !important; font-weight:700; padding:14px 28px; border-radius:6px; font-size:15px; text-decoration:none; display:inline-block; font-family:Inter,sans-serif; transition:filter 0.2s ease; }
     .btn-primary:hover { filter:brightness(1.15); }
@@ -323,15 +323,22 @@
       .ft-links { justify-content:center; }
     }
     @media(max-width:768px) {
-      .hero { flex-direction:column-reverse; min-height:auto; padding:36px 20px 44px; }
-      .hero-image { max-width:100%; max-height:300px; margin-bottom:2rem; }
-      .hero-image img { max-height:300px; }
-      .hero-content { max-width:100%; text-align:center; }
+      .hero { flex-direction:column; min-height:auto; padding:1rem 20px 1.5rem; }
+      .hero-image { order:1; max-width:100%; max-height:180px; margin-bottom:1rem; padding-right:0; }
+      .hero-image img { max-height:180px; }
+      .hero-content { order:2; max-width:100%; text-align:center; }
       .hero-sub { margin-left:auto; margin-right:auto; }
       .hero-content h1 { font-size:clamp(1.5rem,5vw,2rem); }
       .hero-cta { justify-content:center; }
       .btn-primary { padding:12px 20px; font-size:14px; }
       .btn-secondary { padding:12px 20px; font-size:14px; }
+    }
+    @media(max-width:480px) {
+      .hero { padding-top:0.5rem; }
+      .hero-image { max-height:140px; }
+      .hero-image img { max-height:140px; }
+      .hero-content h1 { font-size:clamp(1.3rem,5vw,1.6rem); }
+      .hero-sub { font-size:0.9rem; }
     }
   </style>
 </head>
