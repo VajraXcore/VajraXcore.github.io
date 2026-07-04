@@ -41,7 +41,7 @@ Also available: [VajraX v1.0.0 (legacy)](https://github.com/VajraXcore/VajraX_Re
 - **Platform:** Android 8.0+ (API 26)
 - **Target SDK:** 35
 - **Root required:** No
-- **Internet required:** Optional — needed only for the 7 Live Network Ops tools
+- **Internet required:** Optional — needed only for 8 tools (SSH Terminal, SNMP Browser Pro, WiFi Analyzer Pro, Network Scanner Pro, Speed Test, Wake-on-LAN Pro, Advanced Ping & Traceroute, DNS Lookup)
 - **Signing:** Signed with RSA-4096, APK Signature Scheme v2
 
 **How to install:**
@@ -100,7 +100,7 @@ VajraX is built on a zero-trust privacy model:
 - ✅ **Zero cloud sync** — nothing leaves your device
 - ✅ **No account required** — install and use immediately
 - ✅ **Minimal permissions** — only INTERNET + ACCESS_NETWORK_STATE
-  (required for the 7 Live Network Ops tools: SSH Terminal, SNMP Browser Pro, WiFi Analyzer Pro, Network Scanner Pro, Speed Test, Wake-on-LAN Pro, Advanced Ping & Traceroute)
+  (required for 8 tools: SSH Terminal, SNMP Browser Pro, WiFi Analyzer Pro, Network Scanner Pro, Speed Test, Wake-on-LAN Pro, Advanced Ping & Traceroute, DNS Lookup)
 
 What you calculate in VajraX stays in VajraX.
 
@@ -114,7 +114,7 @@ What you calculate in VajraX stays in VajraX.
 | Target SDK | 35 |
 | Storage | 4.52 MB |
 | Root | Not required |
-| Internet | Optional — 61 of 68 tools are 100% offline |
+| Internet | Optional — 60 of 68 tools are 100% offline |
 | Permissions | INTERNET, ACCESS_NETWORK_STATE only |
 
 ---
