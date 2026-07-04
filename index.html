@@ -107,7 +107,9 @@
     .mob a:hover { color:var(--blue); }
 
     /* ── HERO ── */
-    .hero { background:var(--bg); min-height:90vh; margin:0; padding:0 60px; display:flex; align-items:center; justify-content:space-between; gap:40px; }
+    .hero { background:var(--bg); min-height:90vh; margin:0; display:flex; align-items:center; }
+    .hero-mobile-banner { display:none; }
+    .hero-inner { display:flex; align-items:center; justify-content:space-between; gap:40px; width:100%; max-width:1400px; margin:0 auto; padding:0 60px; }
     .hero-content { max-width:55%; }
     .hero-content h1 { color:#fff; font-weight:900; font-size:clamp(1.8rem,4vw,3rem); line-height:1.15; margin:0; }
     .hero-sub { font-size:clamp(0.95rem,1.5vw,1.15rem); color:var(--muted); max-width:600px; margin-top:1.5rem; line-height:1.7; }
@@ -323,22 +325,20 @@
       .ft-links { justify-content:center; }
     }
     @media(max-width:768px) {
-      .hero { flex-direction:column; min-height:auto; padding:1rem 20px 1.5rem; }
-      .hero-image { order:1; max-width:100%; max-height:180px; margin-bottom:1rem; padding-right:0; }
-      .hero-image img { max-height:180px; }
-      .hero-content { order:2; max-width:100%; text-align:center; }
-      .hero-sub { margin-left:auto; margin-right:auto; }
-      .hero-content h1 { font-size:clamp(1.5rem,5vw,2rem); }
-      .hero-cta { justify-content:center; }
-      .btn-primary { padding:12px 20px; font-size:14px; }
-      .btn-secondary { padding:12px 20px; font-size:14px; }
+      .hero { flex-direction:column; align-items:center; text-align:center; padding:1.5rem; min-height:auto; }
+      .hero-mobile-banner { display:block; width:100%; max-width:360px; height:auto; margin:0 auto 1.5rem auto; }
+      .hero-inner { flex-direction:column; max-width:100%; padding:0; margin:0; gap:0; }
+      .hero-image { display:none; }
+      .hero-content { max-width:100%; text-align:center; }
+      .hero-content h1 { font-size:clamp(1.3rem,5vw,1.7rem); font-weight:800; }
+      .hero-sub { font-size:0.95rem; line-height:1.7; max-width:90%; margin:0.75rem auto; }
+      .hero-cta { flex-direction:column; align-items:center; width:100%; gap:0.75rem; }
+      .hero-cta a { width:100%; max-width:320px; text-align:center; padding:16px; }
     }
     @media(max-width:480px) {
-      .hero { padding-top:0.5rem; }
-      .hero-image { max-height:140px; }
-      .hero-image img { max-height:140px; }
-      .hero-content h1 { font-size:clamp(1.3rem,5vw,1.6rem); }
-      .hero-sub { font-size:0.9rem; }
+      .hero { padding:1rem; }
+      .hero-mobile-banner { max-width:280px; }
+      .hero-content h1 { font-size:clamp(1.2rem,5vw,1.5rem); }
     }
   </style>
 </head>
@@ -377,16 +377,19 @@
 
 <!-- 2. HERO -->
 <section id="hero" class="hero">
-  <div class="hero-content">
-    <h1>The Only Free Network &amp; Security Toolkit You Need &mdash; 68 Professional Tools, Zero Paywalls</h1>
-    <p class="hero-sub">VajraX puts enterprise-grade networking and security tools in your pocket. From subnet planning to BGP path analysis, from multi-vendor config generation to PCI-DSS compliance checks &mdash; everything works offline, with no accounts and no tracking.</p>
-    <div class="hero-cta">
-      <a class="btn-primary" href="https://github.com/VajraXcore/VajraX_Release_2.0/releases/latest/download/VajraX-v2.0.0.apk" target="_blank" rel="noopener">↓ Download Free APK — 4.52 MB</a>
-      <a class="btn-secondary" href="#tools">Explore All 68 Tools</a>
+  <img src="images/mobile-banner.png" alt="VajraX — Network · Security · Toolkit" class="hero-mobile-banner">
+  <div class="hero-inner">
+    <div class="hero-content">
+      <h1>The Only Free Network &amp; Security Toolkit You Need &mdash; 68 Professional Tools, Zero Paywalls</h1>
+      <p class="hero-sub">VajraX puts enterprise-grade networking and security tools in your pocket. From subnet planning to BGP path analysis, from multi-vendor config generation to PCI-DSS compliance checks &mdash; everything works offline, with no accounts and no tracking.</p>
+      <div class="hero-cta">
+        <a class="btn-primary" href="https://github.com/VajraXcore/VajraX_Release_2.0/releases/latest/download/VajraX-v2.0.0.apk" target="_blank" rel="noopener">↓ Download Free APK — 4.52 MB</a>
+        <a class="btn-secondary" href="#tools">Explore All 68 Tools</a>
+      </div>
     </div>
-  </div>
-  <div class="hero-image">
-    <img src="images/hero-artwork.png" alt="VajraX shield emblem">
+    <div class="hero-image">
+      <img src="images/hero-artwork.png" alt="VajraX shield emblem">
+    </div>
   </div>
 </section>
 
