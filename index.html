@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
   <title>VajraX — Free Network & Security Toolkit | 68 Offline Tools</title>
   <meta name="description" content="VajraX v2.0 — Professional Network & Security Toolkit. 68 tools for network engineers, cybersecurity professionals, and CCNA/CCNP candidates. 100% offline. Zero tracking.">
   <meta property="og:title" content="VajraX — Free Network & Security Toolkit | 68 Offline Tools">
@@ -45,11 +46,29 @@
     "softwareVersion": "2.0.0"
   }
   </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="canonical" href="https://vajrax.in/">
+  <link rel="preload" as="font" type="font/woff2" href="fonts/inter-variable.woff2" crossorigin>
+  <link rel="preload" as="image" type="image/webp" href="images/hero-artwork.webp" media="(min-width: 769px)" fetchpriority="high">
+  <link rel="preload" as="image" type="image/webp" href="images/mobile-banner.webp" media="(max-width: 768px)" fetchpriority="high">
   <style>
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 300 900;
+      font-display: swap;
+      src: url('fonts/inter-variable.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'JetBrains Mono';
+      font-style: normal;
+      font-weight: 400 700;
+      font-display: swap;
+      src: url('fonts/jetbrains-mono-variable.woff2') format('woff2');
+    }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+    .skip-link { position: absolute; top: -100px; left: 8px; z-index: 2000; background: var(--blue); color: #000; font-weight: 700; padding: 10px 18px; border-radius: 8px; transition: top .2s; }
+    .skip-link:focus { top: 8px; }
     :root {
       --bg: #000000;
       --bg2: #001628;
@@ -59,7 +78,7 @@
       --gold: #FFB300;
       --text: #FFFFFF;
       --muted: #A0AEC0;
-      --dim: #4A5568;
+      --dim: #7C8CA6;
       --border: rgba(0,212,255,0.15);
       --border-g: rgba(255,179,0,0.25);
       --green: #22c55e;
@@ -344,11 +363,16 @@
 </head>
 <body>
 
+<a href="#hero" class="skip-link">Skip to main content</a>
+
 <!-- 1. NAVBAR -->
 <nav class="nav" id="navbar">
   <div class="nav-inner">
     <a href="#hero" class="nav-brand">
-      <img src="Final_logo/app_icon_final.png" alt="VajraX" class="nav-icon">
+      <picture>
+        <source srcset="Final_logo/app_icon_final.webp" type="image/webp">
+        <img src="Final_logo/app_icon_final.png" alt="VajraX logo" class="nav-icon" width="96" height="96" loading="eager">
+      </picture>
       <span class="nav-name">VajraX</span>
     </a>
     <ul class="nav-links">
@@ -360,7 +384,7 @@
       <li><a href="#contact">Contact</a></li>
     </ul>
     <a href="#download" class="nav-cta">&#8595; Download Free</a>
-    <button class="hbg" id="hbg" aria-label="Menu"><span></span><span></span><span></span></button>
+    <button class="hbg" id="hbg" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
   </div>
 </nav>
 <div class="mob" id="mob">
@@ -376,8 +400,11 @@
 </div>
 
 <!-- 2. HERO -->
-<section id="hero" class="hero">
-  <img src="images/mobile-banner.png" alt="VajraX — Network · Security · Toolkit" class="hero-mobile-banner">
+<section id="hero" class="hero" tabindex="-1">
+  <picture>
+    <source srcset="images/mobile-banner.webp" type="image/webp">
+    <img src="images/mobile-banner.png" alt="VajraX — Network · Security · Toolkit" class="hero-mobile-banner" width="680" height="361" loading="eager" fetchpriority="high">
+  </picture>
   <div class="hero-inner">
     <div class="hero-content">
       <h1>The Only Free Network &amp; Security Toolkit You Need &mdash; 68 Professional Tools, Zero Paywalls</h1>
@@ -388,7 +415,10 @@
       </div>
     </div>
     <div class="hero-image">
-      <img src="images/hero-artwork.png" alt="VajraX shield emblem">
+      <picture>
+        <source srcset="images/hero-artwork.webp" type="image/webp">
+        <img src="images/hero-artwork.png" alt="VajraX shield emblem" width="1200" height="1267" loading="eager" fetchpriority="high">
+      </picture>
     </div>
   </div>
 </section>
@@ -470,35 +500,35 @@
     <div class="shots-group-title">VajraX v2.0</div>
     <div class="shots-grid">
       <div class="fade-in d1">
-        <div class="phone"><img class="shot-img" src="screenshots/v2/IMG_20260704_232543.jpg" alt="VajraX v2.0 home screen — 68 tools across 5 new engines"></div>
+        <div class="phone"><picture><source srcset="screenshots/v2/IMG_20260704_232543.webp" type="image/webp"><img class="shot-img" src="screenshots/v2/IMG_20260704_232543.jpg" alt="VajraX v2.0 home screen — 68 tools across 5 new engines" width="440" height="909" loading="lazy"></picture></div>
         <div class="shot-lbl">Home &middot; 68 Tools, 5 New Engines</div>
       </div>
       <div class="fade-in d2">
-        <div class="phone"><img class="shot-img" src="screenshots/v2/IMG_20260704_132709.jpg" alt="Fabric Architect engine — 9 tools"></div>
+        <div class="phone"><picture><source srcset="screenshots/v2/IMG_20260704_132709.webp" type="image/webp"><img class="shot-img" src="screenshots/v2/IMG_20260704_132709.jpg" alt="Fabric Architect engine — 9 tools" width="440" height="908" loading="lazy"></picture></div>
         <div class="shot-lbl">Fabric Architect &middot; 9 Tools</div>
       </div>
       <div class="fade-in d3">
-        <div class="phone"><img class="shot-img" src="screenshots/v2/IMG_20260704_132741.jpg" alt="Config Intelligence engine — 6 tools"></div>
+        <div class="phone"><picture><source srcset="screenshots/v2/IMG_20260704_132741.webp" type="image/webp"><img class="shot-img" src="screenshots/v2/IMG_20260704_132741.jpg" alt="Config Intelligence engine — 6 tools" width="440" height="913" loading="lazy"></picture></div>
         <div class="shot-lbl">Config Intelligence &middot; 6 Tools</div>
       </div>
       <div class="fade-in d1">
-        <div class="phone"><img class="shot-img" src="screenshots/v2/IMG_20260704_132730.jpg" alt="Live Network Ops engine — 7 live tools"></div>
+        <div class="phone"><picture><source srcset="screenshots/v2/IMG_20260704_132730.webp" type="image/webp"><img class="shot-img" src="screenshots/v2/IMG_20260704_132730.jpg" alt="Live Network Ops engine — 7 live tools" width="440" height="913" loading="lazy"></picture></div>
         <div class="shot-lbl">Live Network Ops &middot; 7 Live Tools</div>
       </div>
       <div class="fade-in d2">
-        <div class="phone"><img class="shot-img" src="screenshots/v2/IMG_20260704_132719.jpg" alt="The Architect Engine — network design and IP calculation tools"></div>
+        <div class="phone"><picture><source srcset="screenshots/v2/IMG_20260704_132719.webp" type="image/webp"><img class="shot-img" src="screenshots/v2/IMG_20260704_132719.jpg" alt="The Architect Engine — network design and IP calculation tools" width="440" height="909" loading="lazy"></picture></div>
         <div class="shot-lbl">The Architect Engine</div>
       </div>
       <div class="fade-in d3">
-        <div class="phone"><img class="shot-img" src="screenshots/v2/IMG_20260704_132815.jpg" alt="The Automate Engine — multi-vendor config generation and protocol calculation"></div>
+        <div class="phone"><picture><source srcset="screenshots/v2/IMG_20260704_132815.webp" type="image/webp"><img class="shot-img" src="screenshots/v2/IMG_20260704_132815.jpg" alt="The Automate Engine — multi-vendor config generation and protocol calculation" width="440" height="913" loading="lazy"></picture></div>
         <div class="shot-lbl">The Automate Engine</div>
       </div>
       <div class="fade-in d1">
-        <div class="phone"><img class="shot-img" src="screenshots/v2/IMG_20260704_132752.jpg" alt="The Command Center — live network diagnostics"></div>
+        <div class="phone"><picture><source srcset="screenshots/v2/IMG_20260704_132752.webp" type="image/webp"><img class="shot-img" src="screenshots/v2/IMG_20260704_132752.jpg" alt="The Command Center — live network diagnostics" width="440" height="911" loading="lazy"></picture></div>
         <div class="shot-lbl">The Command Center</div>
       </div>
       <div class="fade-in d2">
-        <div class="phone"><img class="shot-img" src="screenshots/v2/IMG_20260704_132802.jpg" alt="Solutions — end-to-end design tools"></div>
+        <div class="phone"><picture><source srcset="screenshots/v2/IMG_20260704_132802.webp" type="image/webp"><img class="shot-img" src="screenshots/v2/IMG_20260704_132802.jpg" alt="Solutions — end-to-end design tools" width="440" height="913" loading="lazy"></picture></div>
         <div class="shot-lbl">Solutions</div>
       </div>
     </div>
@@ -506,27 +536,27 @@
     <div class="shots-group-title v1">VajraX v1.0 (Legacy)</div>
     <div class="shots-grid">
       <div class="fade-in d1">
-        <div class="phone"><img class="shot-img" src="screenshots/v1/IMG_20260629_183555.jpg" alt="VajraX v1.0 home screen — Quick Launch"></div>
+        <div class="phone"><picture><source srcset="screenshots/v1/IMG_20260629_183555.webp" type="image/webp"><img class="shot-img" src="screenshots/v1/IMG_20260629_183555.jpg" alt="VajraX v1.0 home screen — Quick Launch" width="440" height="906" loading="lazy"></picture></div>
         <div class="shot-lbl">Home &middot; Quick Launch</div>
       </div>
       <div class="fade-in d2">
-        <div class="phone"><img class="shot-img" src="screenshots/v1/IMG_20260629_183612.jpg" alt="The Architect Engine — v1.0"></div>
+        <div class="phone"><picture><source srcset="screenshots/v1/IMG_20260629_183612.webp" type="image/webp"><img class="shot-img" src="screenshots/v1/IMG_20260629_183612.jpg" alt="The Architect Engine — v1.0" width="440" height="909" loading="lazy"></picture></div>
         <div class="shot-lbl">The Architect Engine</div>
       </div>
       <div class="fade-in d3">
-        <div class="phone"><img class="shot-img" src="screenshots/v1/IMG_20260629_183626.jpg" alt="The Automate Engine — v1.0"></div>
+        <div class="phone"><picture><source srcset="screenshots/v1/IMG_20260629_183626.webp" type="image/webp"><img class="shot-img" src="screenshots/v1/IMG_20260629_183626.jpg" alt="The Automate Engine — v1.0" width="440" height="911" loading="lazy"></picture></div>
         <div class="shot-lbl">The Automate Engine</div>
       </div>
       <div class="fade-in d1">
-        <div class="phone"><img class="shot-img" src="screenshots/v1/IMG_20260629_183640.jpg" alt="The Armory — reference database, v1.0"></div>
+        <div class="phone"><picture><source srcset="screenshots/v1/IMG_20260629_183640.webp" type="image/webp"><img class="shot-img" src="screenshots/v1/IMG_20260629_183640.jpg" alt="The Armory — reference database, v1.0" width="440" height="911" loading="lazy"></picture></div>
         <div class="shot-lbl">The Armory</div>
       </div>
       <div class="fade-in d2">
-        <div class="phone"><img class="shot-img" src="screenshots/v1/IMG_20260629_183650.jpg" alt="The Command Center — v1.0"></div>
+        <div class="phone"><picture><source srcset="screenshots/v1/IMG_20260629_183650.webp" type="image/webp"><img class="shot-img" src="screenshots/v1/IMG_20260629_183650.jpg" alt="The Command Center — v1.0" width="440" height="913" loading="lazy"></picture></div>
         <div class="shot-lbl">The Command Center</div>
       </div>
       <div class="fade-in d3">
-        <div class="phone"><img class="shot-img" src="screenshots/v1/IMG_20260629_183706.jpg" alt="Solutions — v1.0"></div>
+        <div class="phone"><picture><source srcset="screenshots/v1/IMG_20260629_183706.webp" type="image/webp"><img class="shot-img" src="screenshots/v1/IMG_20260629_183706.jpg" alt="Solutions — v1.0" width="440" height="914" loading="lazy"></picture></div>
         <div class="shot-lbl">Solutions</div>
       </div>
     </div>
@@ -905,7 +935,10 @@
 <footer>
   <div class="wrap">
     <div class="ft-logo-wrap">
-      <img src="Final_logo/Brand_banner_final.png" alt="VajraX" class="ft-brand-img">
+      <picture>
+        <source srcset="Final_logo/Brand_banner_final.webp" type="image/webp">
+        <img src="Final_logo/Brand_banner_final.png" alt="VajraX" class="ft-brand-img" width="640" height="360" loading="lazy">
+      </picture>
     </div>
     <div class="ft-bottom">
       <span class="ft-copy">VajraX &mdash; Network. Security. Toolkit.</span>
@@ -949,10 +982,14 @@
   // Hamburger menu
   const hbg = document.getElementById('hbg');
   const mob = document.getElementById('mob');
-  hbg.addEventListener('click', () => { hbg.classList.toggle('open'); mob.classList.toggle('open'); });
-  document.querySelectorAll('.ml').forEach(l => l.addEventListener('click', () => { hbg.classList.remove('open'); mob.classList.remove('open'); }));
+  hbg.addEventListener('click', () => {
+    const open = hbg.classList.toggle('open');
+    mob.classList.toggle('open', open);
+    hbg.setAttribute('aria-expanded', String(open));
+  });
+  document.querySelectorAll('.ml').forEach(l => l.addEventListener('click', () => { hbg.classList.remove('open'); mob.classList.remove('open'); hbg.setAttribute('aria-expanded', 'false'); }));
   document.addEventListener('click', e => {
-    if (!hbg.contains(e.target) && !mob.contains(e.target)) { hbg.classList.remove('open'); mob.classList.remove('open'); }
+    if (!hbg.contains(e.target) && !mob.contains(e.target)) { hbg.classList.remove('open'); mob.classList.remove('open'); hbg.setAttribute('aria-expanded', 'false'); }
   });
 </script>
 </body>
