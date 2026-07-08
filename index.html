@@ -312,7 +312,6 @@
     /* ── FOOTER ── */
     footer { background:#000; border-top:1px solid rgba(255,179,0,0.15); padding:0; }
     .ft-logo-wrap { padding:64px 0 48px; text-align:center; border-bottom:1px solid var(--border); }
-    .ft-brand-img { max-width:300px; width:100%; opacity:0.9; margin:0 auto; display:block; border:none; background:transparent; }
     .ft-bottom { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:16px; padding:28px 0; }
     .ft-copy { font-size:13px; color:var(--dim); }
     .ft-links { display:flex; gap:22px; flex-wrap:wrap; }
@@ -336,7 +335,6 @@
       .phone { width:160px !important; height:320px !important; min-height:320px !important; max-height:320px !important; }
       .cmp th,.cmp td { padding:10px 10px; font-size:12px; }
       .ft-logo-wrap { padding:48px 0 36px; }
-      .ft-brand-img { max-width:100%; }
       .ft-bottom { flex-direction:column; align-items:center; text-align:center; gap:20px; }
       .ft-links { justify-content:center; }
     }
@@ -910,10 +908,12 @@
 <footer>
   <div class="wrap">
     <div class="ft-logo-wrap">
-      <picture>
-        <source srcset="Final_logo/Brand_banner_final.webp" type="image/webp">
-        <img src="Final_logo/Brand_banner_final.png" alt="VajraX" class="ft-brand-img" width="640" height="360" loading="lazy">
-      </picture>
+      <div style="display: flex; align-items: center; justify-content: center; gap: 12px;">
+        <img src="images/vx-icon-64.png" alt="VajraX" width="48" height="48" style="border-radius: 10px;" loading="lazy">
+        <div style="font-family: 'Orbitron', sans-serif; font-weight: 700; font-size: 24px; color: #e8ecf1; display: flex; align-items: baseline;">
+          VAJRA<span style="color: #3dd9ff; font-size: 34px; font-weight: 900; margin-left: 1px;">X</span>
+        </div>
+      </div>
     </div>
     <div class="ft-bottom">
       <span class="ft-copy">VajraX &mdash; Network. Security. Toolkit.</span>
