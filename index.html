@@ -4,7 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-Content-Type-Options" content="nosniff">
-  <link rel="icon" type="image/png" href="Final_logo/app_icon_final.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="images/vx-icon-512.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/vx-icon-192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/vx-icon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/vx-icon-16.png">
+  <link rel="apple-touch-icon" href="images/vx-icon-180.png">
   <title>VajraX — Free Network & Security Toolkit | 68 Offline Tools</title>
   <meta name="description" content="VajraX v2.0 — Professional Network & Security Toolkit. 68 tools for network engineers, cybersecurity professionals, and CCNA/CCNP candidates. 100% offline. Zero tracking.">
   <meta property="og:title" content="VajraX — Free Network & Security Toolkit | 68 Offline Tools">
@@ -49,8 +53,9 @@
   </script>
   <link rel="canonical" href="https://vajrax.in/">
   <link rel="preload" as="font" type="font/woff2" href="fonts/inter-variable.woff2" crossorigin>
-  <link rel="preload" as="image" type="image/webp" href="images/hero-artwork.webp" media="(min-width: 769px)" fetchpriority="high">
-  <link rel="preload" as="image" type="image/webp" href="images/mobile-banner.webp" media="(max-width: 768px)" fetchpriority="high">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;800;900&display=swap" rel="stylesheet">
   <style>
     @font-face {
       font-family: 'Inter';
@@ -107,9 +112,8 @@
     /* ── NAVBAR ── */
     .nav { position: fixed; top:0; left:0; right:0; z-index:1000; backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); background: rgba(0,0,0,0.95); border-bottom: 1px solid rgba(0,212,255,0.08); }
     .nav-inner { display:flex; align-items:center; justify-content:space-between; height:68px; max-width:1200px; margin:0 auto; padding:0 24px; }
-    .nav-brand { display:flex; align-items:center; gap:10px; }
-    .nav-icon { height:36px; width:36px; border-radius:8px; object-fit:cover; flex-shrink:0; border:none; background:transparent; }
-    .nav-name { font-family:'Inter', system-ui, sans-serif; font-weight:800; font-size:22px; background:linear-gradient(135deg,#ffffff 0%,#00D4FF 100%); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; line-height:1; }
+    .nav-brand { font-family:'Orbitron', -apple-system, sans-serif; font-size:21px; font-weight:700; letter-spacing:1px; white-space:nowrap; display:flex; align-items:baseline; }
+    .nav-brand .x-letter { color:#3dd9ff; font-size:30px; font-weight:900; margin-left:1px; line-height:1; }
     .nav-links { display:flex; align-items:center; gap:28px; list-style:none; }
     .nav-links a { font-size:14px; font-weight:500; color:var(--muted); transition:color .2s; }
     .nav-links a:hover, .nav-links a.active { color:var(--blue); }
@@ -127,35 +131,31 @@
     .mob a:hover { color:var(--blue); }
 
     /* ── HERO ── */
-    .hero { background:var(--bg); min-height:auto; padding-top:2rem; padding-bottom:2rem; margin:0; display:flex; align-items:center; }
-    .hero-mobile-banner { display:none; }
-    .hero-inner { display:flex; align-items:center; justify-content:space-between; gap:40px; width:100%; max-width:1400px; margin:0 auto; padding:0 60px; }
-    .hero-content { max-width:55%; }
-    .hero-content h1 { color:#fff; font-weight:900; font-size:clamp(1.8rem,4vw,3rem); line-height:1.15; margin:0; }
-    .hero-sub { font-size:clamp(0.95rem,1.5vw,1.15rem); color:var(--muted); max-width:600px; margin-top:1.5rem; line-height:1.7; }
-    .hero-cta { margin-top:2rem; display:flex; gap:1rem; flex-wrap:wrap; }
-    .hero-image { max-width:45%; display:flex; align-items:center; justify-content:center; padding-right:2rem; overflow:visible; }
-    .hero-image img { max-width:100%; max-height:80vh; object-fit:contain; }
-    .btn-primary { background:var(--blue); color:#000000 !important; font-weight:700; padding:14px 28px; border-radius:6px; font-size:15px; text-decoration:none; display:inline-block; font-family:Inter,sans-serif; transition:filter 0.2s ease; }
-    .btn-primary:hover { filter:brightness(1.15); }
-    .btn-secondary { background:transparent; border:2px solid var(--blue); color:var(--blue) !important; font-weight:700; padding:14px 28px; border-radius:6px; font-size:15px; text-decoration:none; display:inline-block; font-family:Inter,sans-serif; transition:filter 0.2s ease; }
-    .btn-secondary:hover { filter:brightness(1.3); }
+    .hero { padding:100px 48px 80px; max-width:1000px; }
+    .hero-eyebrow { font-size:13px; letter-spacing:3px; color:#4a7a8a; text-transform:uppercase; margin-bottom:24px; font-weight:600; }
+    .hero-eyebrow span { color:#3dd9ff; }
+    .hero h1 { font-size:clamp(36px,6vw,64px); line-height:1.1; font-weight:700; letter-spacing:-1.5px; margin-bottom:28px; word-wrap:break-word; overflow-wrap:break-word; color:#e8ecf1; }
+    .hero h1 .accent { color:#3dd9ff; }
+    .hero-sub { font-size:18px; line-height:1.6; color:#8a94a3; max-width:600px; margin-bottom:40px; font-weight:400; }
+    .hero-cta-row { display:flex; gap:16px; flex-wrap:wrap; }
+    .btn-primary { background:#e8ecf1; color:#08090c; padding:15px 28px; border-radius:4px; font-size:15px; font-weight:600; text-decoration:none; display:inline-block; }
+    .btn-secondary { border:1px solid #2a2f38; color:#e8ecf1; padding:15px 28px; border-radius:4px; font-size:15px; font-weight:600; text-decoration:none; display:inline-block; }
     .btn-p { display:inline-flex; align-items:center; gap:8px; background:var(--blue); color:#000; font-weight:700; font-size:15px; padding:14px 28px; border-radius:10px; transition:opacity .2s,transform .2s,box-shadow .2s; }
     .btn-p:hover { opacity:.9; transform:translateY(-2px); box-shadow:0 8px 32px rgba(0,212,255,.3); }
     .btn-s { display:inline-flex; align-items:center; gap:8px; background:transparent; color:var(--text); font-weight:600; font-size:15px; padding:14px 28px; border-radius:10px; border:1px solid var(--border); transition:border-color .2s,background .2s; }
     .btn-s:hover { border-color:var(--blue); background:rgba(0,212,255,.05); }
 
     /* ── STATS ── */
-    #stats { padding:0; background:var(--card); border-top:1px solid var(--border); border-bottom:1px solid var(--border); }
-    .stats-row { display:grid; grid-template-columns:repeat(8,1fr); }
-    .stat { padding:26px 12px; text-align:center; border-right:1px solid var(--border); transition:background .2s; }
-    .stat:last-child { border-right:none; }
-    .stat:hover { background:rgba(0,212,255,.04); }
-    .sv { font-family:var(--mono); font-size:21px; font-weight:700; color:var(--blue); line-height:1; margin-bottom:4px; }
-    .sl { font-size:10px; color:var(--dim); text-transform:uppercase; letter-spacing:.08em; }
+    .stats-band { border-top:1px solid #1a1d24; border-bottom:1px solid #1a1d24; padding:60px 48px; display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:32px; }
+    .stat-number { font-size:clamp(36px,4vw,56px); font-weight:700; letter-spacing:-1.5px; line-height:1; color:#e8ecf1; }
+    .stat-number.cyan { color:#3dd9ff; }
+    .stat-label { font-size:13px; color:#6a7481; letter-spacing:.5px; text-transform:uppercase; font-weight:600; margin-top:8px; }
 
     /* ── WHY ── */
     #why { background:linear-gradient(to bottom,#000,#001628); }
+    .why-facts { display:flex; gap:20px; flex-wrap:wrap; margin-top:24px; }
+    .why-facts span { font-family:var(--mono); font-size:12px; color:var(--dim); display:flex; align-items:center; gap:6px; }
+    .why-facts span::before { content:'\2713'; color:var(--green); }
     .cmp { width:100%; border-collapse:collapse; margin-top:48px; border-radius:var(--r); overflow:hidden; }
     .cmp th { padding:15px 22px; text-align:left; font-size:14px; font-weight:700; }
     .cmp th:first-child { color:var(--dim); }
@@ -325,9 +325,6 @@
       .off-grid,.inst-grid,.con-grid { grid-template-columns:1fr; }
       .feat-grid,.mod-grid,.priv-grid,.rm-grid { grid-template-columns:1fr 1fr; }
       .shots-grid { gap:16px; }
-      .stats-row { grid-template-columns:repeat(4,1fr); }
-      .stat:nth-child(4) { border-right:none; }
-      .stat:nth-child(n+5) { border-top:1px solid var(--border); }
       .cl-body { grid-template-columns:1fr; }
       .nav-links,.nav-cta { display:none; }
       .hbg { display:flex; }
@@ -337,7 +334,6 @@
       .feat-grid,.mod-grid,.priv-grid,.rm-grid { grid-template-columns:1fr; }
       .shots-grid { gap:12px; }
       .phone { width:160px !important; height:320px !important; min-height:320px !important; max-height:320px !important; }
-      .sv { font-size:16px; }
       .cmp th,.cmp td { padding:10px 10px; font-size:12px; }
       .ft-logo-wrap { padding:48px 0 36px; }
       .ft-brand-img { max-width:100%; }
@@ -345,20 +341,9 @@
       .ft-links { justify-content:center; }
     }
     @media(max-width:768px) {
-      .hero { flex-direction:column; align-items:center; text-align:center; padding:1.5rem; min-height:auto; }
-      .hero-mobile-banner { display:block; width:85%; max-width:340px; height:auto; margin:0.5rem auto 1rem auto; object-fit:contain; }
-      .hero-inner { flex-direction:column; max-width:100%; padding:0; margin:0; gap:0; }
-      .hero-image { display:none; }
-      .hero-content { max-width:100%; text-align:center; }
-      .hero-content h1 { font-size:clamp(1.3rem,5vw,1.7rem); font-weight:800; }
-      .hero-sub { font-size:0.95rem; line-height:1.7; max-width:90%; margin:0.75rem auto; }
-      .hero-cta { flex-direction:column; align-items:center; width:100%; gap:0.75rem; }
-      .hero-cta a { width:100%; max-width:320px; text-align:center; padding:16px; }
-    }
-    @media(max-width:480px) {
-      .hero { padding:1rem; }
-      .hero-mobile-banner { max-width:280px; }
-      .hero-content h1 { font-size:clamp(1.2rem,5vw,1.5rem); }
+      .hero { padding:84px 24px 50px; }
+      .stats-band { padding:40px 24px; grid-template-columns:repeat(2,1fr); gap:24px; }
+      .nav-brand .x-letter { font-size:26px; }
     }
   </style>
 </head>
@@ -369,13 +354,7 @@
 <!-- 1. NAVBAR -->
 <nav class="nav" id="navbar">
   <div class="nav-inner">
-    <a href="#hero" class="nav-brand">
-      <picture>
-        <source srcset="Final_logo/app_icon_final.webp" type="image/webp">
-        <img src="Final_logo/app_icon_final.png" alt="VajraX logo" class="nav-icon" width="96" height="96" loading="eager">
-      </picture>
-      <span class="nav-name">VajraX</span>
-    </a>
+    <a href="#hero" class="nav-brand">VAJRA<span class="x-letter">X</span></a>
     <ul class="nav-links">
       <li><a href="#why">Why VajraX</a></li>
       <li><a href="#features">Features</a></li>
@@ -403,45 +382,33 @@
 <main>
 <!-- 2. HERO -->
 <section id="hero" class="hero" tabindex="-1">
-  <picture>
-    <source srcset="images/mobile-banner.webp" type="image/webp">
-    <img src="images/mobile-banner.png" alt="VajraX — Network · Security · Toolkit" class="hero-mobile-banner" width="3200" height="1312" loading="eager" fetchpriority="high">
-  </picture>
-  <div class="hero-inner">
-    <div class="hero-content">
-      <h1>The Only Free Network &amp; Security Toolkit You Need &mdash; 68 Professional Tools, Zero Paywalls</h1>
-      <p class="hero-sub">VajraX puts enterprise-grade networking and security tools in your pocket. From subnet planning to BGP path analysis, from multi-vendor config generation to PCI-DSS compliance checks &mdash; everything works offline, with no accounts and no tracking.</p>
-      <div class="hero-cta">
-        <a class="btn-primary" href="https://github.com/VajraXcore/VajraX_Release_2.0/releases/latest/download/VajraX-v2.0.0.apk" target="_blank" rel="noopener">↓ Download Free APK — 4.52 MB</a>
-        <a class="btn-secondary" href="#tools">Explore All 68 Tools</a>
-      </div>
-    </div>
-    <div class="hero-image">
-      <picture>
-        <source srcset="images/hero-artwork.webp" type="image/webp">
-        <img src="images/hero-artwork.png" alt="VajraX shield emblem" width="1200" height="1267" loading="eager" fetchpriority="high">
-      </picture>
-    </div>
+  <div class="hero-eyebrow">v2.0.0 <span>&middot;</span> now available</div>
+  <h1>The network and security toolkit built for <span class="accent">zero compromise.</span></h1>
+  <p class="hero-sub">68 professional tools. Zero telemetry. Zero paywalls. Everything a network engineer or security professional needs, running fully offline on your device.</p>
+  <div class="hero-cta-row">
+    <a class="btn-primary" href="https://github.com/VajraXcore/VajraX_Release_2.0/releases/latest/download/VajraX-v2.0.0.apk" target="_blank" rel="noopener">Download free APK</a>
+    <a class="btn-secondary" href="#tools">Explore all tools</a>
   </div>
 </section>
 
-<div style="background:linear-gradient(180deg,#000000 0%,#001628 100%);height:60px;"></div>
-
-<!-- 3. STATS BAR -->
-<div id="stats">
-  <div class="wrap" style="padding:0 24px">
-    <div class="stats-row">
-      <div class="stat fade-in"><div class="sv">5</div><div class="sl">New Engines</div></div>
-      <div class="stat fade-in d1"><div class="sv">68</div><div class="sl">Tools</div></div>
-      <div class="stat fade-in d2"><div class="sv">600+</div><div class="sl">Ports</div></div>
-      <div class="stat fade-in d3"><div class="sv">500+</div><div class="sl">RFCs</div></div>
-      <div class="stat fade-in d4"><div class="sv">100%</div><div class="sl">Offline</div></div>
-      <div class="stat fade-in d5"><div class="sv">0</div><div class="sl">Tracking</div></div>
-      <div class="stat fade-in d6"><div class="sv">0</div><div class="sl">Root Needed</div></div>
-      <div class="stat fade-in d6"><div class="sv">4.52 MB</div><div class="sl">APK Size</div></div>
-    </div>
+<section class="stats-band">
+  <div>
+    <div class="stat-number cyan">68</div>
+    <div class="stat-label">Professional tools</div>
   </div>
-</div>
+  <div>
+    <div class="stat-number">1,442</div>
+    <div class="stat-label">Passing tests</div>
+  </div>
+  <div>
+    <div class="stat-number">60/68</div>
+    <div class="stat-label">Work fully offline</div>
+  </div>
+  <div>
+    <div class="stat-number">4.52 <span style="font-size:0.5em;">MB</span></div>
+    <div class="stat-label">Total APK size</div>
+  </div>
+</section>
 
 <!-- 4. WHY VAJRAX -->
 <section id="why">
@@ -450,6 +417,11 @@
       <div class="lbl">// Why VajraX</div>
       <h2 class="h2">Built different.<br>Works everywhere.</h2>
       <p class="sub">Other network tools are feature-locked, cloud-dependent, or bloated. VajraX is the professional toolkit that respects your time and your data.</p>
+      <div class="why-facts">
+        <span>5 new engines in v2.0</span>
+        <span>600+ ports referenced</span>
+        <span>500+ RFCs indexed</span>
+      </div>
     </div>
     <div class="fade-in d2">
       <table class="cmp">
