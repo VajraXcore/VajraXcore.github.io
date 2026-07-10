@@ -389,7 +389,7 @@
 <main>
 <!-- 2. HERO -->
 <section id="hero" class="hero" tabindex="-1">
-  <div class="hero-eyebrow">v2.0.0 <span>&middot;</span> now available</div>
+  <div class="hero-eyebrow">v2.0.1 <span>&middot;</span> now available</div>
   <h1>The network and security toolkit built for <span class="accent">zero compromise.</span></h1>
   <p class="hero-sub">68 professional tools. Zero telemetry. Zero paywalls. Everything a network engineer or security professional needs, running fully offline on your device.</p>
   <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 20px;">
@@ -400,7 +400,7 @@
     </div>
   </div>
   <div class="hero-cta-row">
-    <a class="btn-primary" href="https://github.com/VajraXcore/VajraX_Release_2.0/releases/latest/download/VajraX-v2.0.0.apk" target="_blank" rel="noopener">Download free APK</a>
+    <a class="btn-primary" href="https://github.com/VajraXcore/VajraX_Release_2.0/releases/latest/download/app-release.apk" target="_blank" rel="noopener">Download free APK</a>
     <a class="btn-secondary" href="#tools">Explore all tools</a>
   </div>
 </section>
@@ -712,8 +712,32 @@
     </div>
     <div class="cl-box fade-in d1">
       <div class="cl-hd">
-        <div><div class="cl-ver">v2.0.0</div><div class="cl-dt">July 2026 &middot; Major Release</div></div>
+        <div><div class="cl-ver">v2.0.1</div><div class="cl-dt">July 2026 &middot; Patch Release</div></div>
         <div class="cl-badge">CURRENT</div>
+      </div>
+      <div class="cl-body">
+        <div>
+          <div class="cl-sec-t">// Fixes</div>
+          <ul class="cl-list">
+            <li>Route Summarizer /32 single-route bug fixed, with regression tests</li>
+            <li>Advanced Ping &amp; Traceroute relabeled to Advanced Ping &amp; Reachability Probe &mdash; unprivileged Android has no real hop-discovery API, so this corrects the capability claim</li>
+          </ul>
+        </div>
+        <div>
+          <div class="cl-sec-t">// Technical</div>
+          <ul class="cl-list">
+            <li>Removed unused androidx.security:security-crypto dependency</li>
+            <li>APK size: ~4.52 MB</li>
+            <li>First release published by the automated CI/CD pipeline</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="cl-box fade-in d1" style="margin-top:24px">
+      <div class="cl-hd">
+        <div><div class="cl-ver">v2.0.0</div><div class="cl-dt">July 2026 &middot; Major Release</div></div>
+        <div class="cl-badge">PREVIOUS</div>
       </div>
       <div class="cl-body">
         <div>
@@ -745,7 +769,6 @@
         <div>
           <div class="cl-sec-t">// Known Limitations</div>
           <ul class="cl-list">
-            <li>Route Summarizer returns /32 for single-route input</li>
             <li>VLSM Deaggregator clamps to /30</li>
             <li>K8s CNI Policy Generator and full SD-WAN Overlay Designer not included</li>
           </ul>
@@ -827,11 +850,11 @@
 <section id="download">
   <div class="wrap">
     <div class="dl-wrap fade-in">
-      <div class="dl-badge">&#9889; v2.0.0 &middot; Signed Release APK &middot; 4.40 MB</div>
+      <div class="dl-badge">&#9889; v2.0.1 &middot; Signed Release APK &middot; 4.52 MB</div>
       <h2 class="dl-h">Get <span>VajraX</span><br>completely free.</h2>
       <p class="dl-sub">No account. No credit card. No trial. Install and start working.</p>
       <div class="dl-btns">
-        <a href="https://github.com/VajraXcore/VajraX_Release_2.0/releases/latest/download/VajraX-v2.0.0.apk" class="btn-dl" target="_blank" rel="noopener">&#8595; Download v2.0 APK from GitHub</a>
+        <a href="https://github.com/VajraXcore/VajraX_Release_2.0/releases/latest/download/app-release.apk" class="btn-dl" target="_blank" rel="noopener">&#8595; Download v2.0 APK from GitHub</a>
         <a href="https://github.com/VajraXcore/VajraX_Release/releases/latest/download/VajraX-v1.0.0.apk" class="btn-s" target="_blank" rel="noopener">&#8595; Download v1.0 (legacy)</a>
       </div>
       <div class="ft-links" style="justify-content:center;margin-top:20px">
