@@ -41,7 +41,7 @@ Also available: [VajraX v1.0.0 (legacy)](https://github.com/VajraXcore/VajraX_Re
 - **Platform:** Android 8.0+ (API 26)
 - **Target SDK:** 35
 - **Root required:** No
-- **Internet required:** Optional — needed only for 8 tools (SSH Terminal, SNMP Browser Pro, WiFi Analyzer Pro, Network Scanner Pro, Speed Test, Wake-on-LAN Pro, Advanced Ping & Traceroute, DNS Lookup)
+- **Internet required:** Optional — needed only for 8 tools (SSH Terminal, SNMP Browser Pro, WiFi Analyzer Pro, Network Scanner Pro, Speed Test, Wake-on-LAN Pro, Advanced Ping & Reachability Probe, DNS Lookup)
 - **Signing:** Signed with RSA-4096, APK Signature Scheme v2
 
 **How to install:**
@@ -66,7 +66,7 @@ Config Analyzer, Config Template Engine, Multi-Vendor Translator Pro, Config Vau
 Zero Trust Architecture Planner Pro, Firewall Policy Analyzer, CVE Explorer Pro, Log Parser & Analyzer, IP Reputation & Threat Intel, Certificate Chain Analyzer Pro, Compliance Auditor Pro, WPA3/WPA2 PMK Calculator, DNSSEC Chain Validator
 
 **📶 LIVE NETWORK OPS** (7 live tools)
-SSH Terminal, SNMP Browser Pro, WiFi Analyzer Pro, Network Scanner Pro, Speed Test, Wake-on-LAN Pro, Advanced Ping & Traceroute
+SSH Terminal, SNMP Browser Pro, WiFi Analyzer Pro, Network Scanner Pro, Speed Test, Wake-on-LAN Pro, Advanced Ping & Reachability Probe
 
 **📡 PROTOCOL DEEP DIVE** (6 tools)
 Protocol Lab Pro, RFC Browser, Multi-Vendor Command Reference Pro, Encoder Toolkit, Bitsmith Sandbox, Hex Packet Decoder
@@ -86,7 +86,7 @@ DNS Lookup, Hash Generator
 **📊 SOLUTIONS** (8 tools, v1.0 foundation)
 IP Camera Planner, CCTV Storage Calculator, PoE Budget Planner, Fiber Power Budget, VLAN Architect, Compliance Checker (PCI-DSS, NIST, ISO 27001), Zero Trust Validator (NIST SP 800-207), Redundancy Planner (HSRP/VRRP)
 
-All 31 v1.0 tools were upgraded with 6-layer output and dual HTML/PDF export in v2.0. Five original v1.0 tools (Tactical Manual, Network Scanner, Ping & Traceroute, SSL Inspector, Config Diff) were superseded by their Pro replacements above.
+All 31 v1.0 tools were upgraded with 6-layer output and dual HTML/PDF export in v2.0. Five original v1.0 tools (Tactical Manual, Network Scanner, Ping & Reachability Probe, SSL Inspector, Config Diff) were superseded by their Pro replacements above.
 
 ---
 
@@ -100,7 +100,7 @@ VajraX is built on a zero-trust privacy model:
 - ✅ **Zero cloud sync** — nothing leaves your device
 - ✅ **No account required** — install and use immediately
 - ✅ **Minimal permissions** — only INTERNET + ACCESS_NETWORK_STATE
-  (required for 8 tools: SSH Terminal, SNMP Browser Pro, WiFi Analyzer Pro, Network Scanner Pro, Speed Test, Wake-on-LAN Pro, Advanced Ping & Traceroute, DNS Lookup)
+  (required for 8 tools: SSH Terminal, SNMP Browser Pro, WiFi Analyzer Pro, Network Scanner Pro, Speed Test, Wake-on-LAN Pro, Advanced Ping & Reachability Probe, DNS Lookup)
 
 What you calculate in VajraX stays in VajraX.
 
