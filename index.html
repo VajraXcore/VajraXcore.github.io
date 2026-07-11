@@ -389,7 +389,7 @@
 <main>
 <!-- 2. HERO -->
 <section id="hero" class="hero" tabindex="-1">
-  <div class="hero-eyebrow">v2.0.1 <span>&middot;</span> now available</div>
+  <div class="hero-eyebrow">v2.1.0 <span>&middot;</span> now available</div>
   <h1>The network and security toolkit built for <span class="accent">zero compromise.</span></h1>
   <p class="hero-sub">68 professional tools. Zero telemetry in the app. Zero paywalls. Everything a network engineer or security professional needs, running fully offline on your device.</p>
   <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 20px;">
@@ -419,7 +419,7 @@
     <div class="stat-label">Work fully offline</div>
   </div>
   <div>
-    <div class="stat-number">4.52 <span style="font-size:0.5em;">MB</span></div>
+    <div class="stat-number">4.41 <span style="font-size:0.5em;">MB</span></div>
     <div class="stat-label">Total APK size</div>
   </div>
 </section>
@@ -626,7 +626,7 @@
         <ul class="off-pts">
           <li class="off-pt"><div class="off-ico">&#9889;</div><div><div class="off-pt-t">Instant &mdash; zero network calls</div><div class="off-pt-d">Subnet calculations, IPv6, VLSM, ACL generation &mdash; all local, all instant.</div></div></li>
           <li class="off-pt"><div class="off-ico">&#9992;</div><div><div class="off-pt-t">Airplane mode ready</div><div class="off-pt-d">Works on a plane, in a secure facility, or anywhere with no connectivity.</div></div></li>
-          <li class="off-pt"><div class="off-ico">&#128230;</div><div><div class="off-pt-t">Everything bundled &mdash; 4.52 MB APK</div><div class="off-pt-d">600+ ports, 500+ RFCs, cable pinouts, MAC database &mdash; all inside the APK.</div></div></li>
+          <li class="off-pt"><div class="off-ico">&#128230;</div><div><div class="off-pt-t">Everything bundled &mdash; 4.41 MB APK</div><div class="off-pt-d">600+ ports, 500+ RFCs, cable pinouts, MAC database &mdash; all inside the APK.</div></div></li>
         </ul>
       </div>
       <div class="fade-in d2">
@@ -684,7 +684,7 @@
         <div class="spec-tbl">
           <div class="spec-r"><span class="spec-lbl">Min Android version</span><span class="spec-val">Android 8.0 (API 26)</span></div>
           <div class="spec-r"><span class="spec-lbl">Target SDK</span><span class="spec-val">Android 15 (API 35)</span></div>
-          <div class="spec-r"><span class="spec-lbl">APK size</span><span class="spec-val">~4.52 MB</span></div>
+          <div class="spec-r"><span class="spec-lbl">APK size</span><span class="spec-val">~4.41 MB</span></div>
           <div class="spec-r"><span class="spec-lbl">Architecture</span><span class="spec-val">ARM64 &middot; ARM32 &middot; x86_64</span></div>
           <div class="spec-r"><span class="spec-lbl">Root required</span><span class="spec-val">Never</span></div>
           <div class="spec-r"><span class="spec-lbl">Permissions</span><span class="spec-val">Internet (optional)</span></div>
@@ -712,8 +712,30 @@
     </div>
     <div class="cl-box fade-in d1">
       <div class="cl-hd">
-        <div><div class="cl-ver">v2.0.1</div><div class="cl-dt">July 2026 &middot; Patch Release</div></div>
+        <div><div class="cl-ver">v2.1.0</div><div class="cl-dt">July 2026 &middot; Patch Release</div></div>
         <div class="cl-badge">CURRENT</div>
+      </div>
+      <div class="cl-body">
+        <div>
+          <div class="cl-sec-t">// Security</div>
+          <ul class="cl-list">
+            <li>SSH Terminal now performs TOFU (trust-on-first-use) host-key verification, closing the previous MITM exposure where StrictHostKeyChecking was disabled</li>
+          </ul>
+        </div>
+        <div>
+          <div class="cl-sec-t">// Technical</div>
+          <ul class="cl-list">
+            <li>New app icon: VX monogram, replacing the previous crossed-vajra design</li>
+            <li>APK size: ~4.41 MB</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="cl-box fade-in d1" style="margin-top:24px">
+      <div class="cl-hd">
+        <div><div class="cl-ver">v2.0.1</div><div class="cl-dt">July 2026 &middot; Patch Release</div></div>
+        <div class="cl-badge">PREVIOUS</div>
       </div>
       <div class="cl-body">
         <div>
@@ -850,7 +872,7 @@
 <section id="download">
   <div class="wrap">
     <div class="dl-wrap fade-in">
-      <div class="dl-badge">&#9889; v2.0.1 &middot; Signed Release APK &middot; 4.52 MB</div>
+      <div class="dl-badge">&#9889; v2.1.0 &middot; Signed Release APK &middot; 4.41 MB</div>
       <h2 class="dl-h">Get <span>VajraX</span><br>completely free.</h2>
       <p class="dl-sub">No account. No credit card. No trial. Install and start working.</p>
       <div class="dl-btns">
@@ -865,7 +887,7 @@
         <span>Signed RSA-4096</span>
         <span>APK Signature Scheme v2</span>
         <span>Android 8.0+ (API 26+)</span>
-        <span>4.52 MB APK</span>
+        <span>4.41 MB APK</span>
       </div>
     </div>
   </div>
@@ -901,7 +923,7 @@
       </details>
       <details class="faq-item">
         <summary class="faq-q">What Android version do I need?</summary>
-        <div class="faq-a">Android 8.0+ (API 26). The APK is approximately 4.52 MB.</div>
+        <div class="faq-a">Android 8.0+ (API 26). The APK is approximately 4.41 MB.</div>
       </details>
       <details class="faq-item">
         <summary class="faq-q">Does VajraX require root?</summary>
