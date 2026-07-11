@@ -7,10 +7,10 @@
 
 **Professional-grade offline networking and cybersecurity toolkit for Android**
 
-[![Version](https://img.shields.io/badge/version-2.0.1-00D4FF?style=for-the-badge)](https://vajrax.in)
+[![Version](https://img.shields.io/badge/version-2.1.0-00D4FF?style=for-the-badge)](https://vajrax.in)
 [![Platform](https://img.shields.io/badge/platform-Android%208.0%2B-FFB300?style=for-the-badge)](https://vajrax.in)
 [![License](https://img.shields.io/badge/license-Free-00D4FF?style=for-the-badge)](https://vajrax.in)
-[![Size](https://img.shields.io/badge/size-4.52%20MB-FFB300?style=for-the-badge)](https://vajrax.in)
+[![Size](https://img.shields.io/badge/size-4.41%20MB-FFB300?style=for-the-badge)](https://vajrax.in)
 
 [⬇️ Download VajraX v2.0.1](https://github.com/VajraXcore/VajraX_Release_2.0/releases/latest/download/VajraX.apk) | [🌐 Website](https://vajrax.in) | [📧 Contact](mailto:pbr65.tech@gmail.com)
 
@@ -36,8 +36,8 @@ precision, power, and reliability in every tool.
 
 Also available: [VajraX v1.0.0 (legacy)](https://github.com/VajraXcore/VajraX_Release/releases/latest/download/VajraX-v1.0.0.apk)
 
-- **Version:** 2.0.1
-- **Size:** 4.52 MB
+- **Version:** 2.1.0
+- **Size:** 4.41 MB
 - **Platform:** Android 8.0+ (API 26)
 - **Target SDK:** 35
 - **Root required:** No
