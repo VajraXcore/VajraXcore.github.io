@@ -12,7 +12,7 @@
 [![License](https://img.shields.io/badge/license-Free-00D4FF?style=for-the-badge)](https://vajrax.in)
 [![Size](https://img.shields.io/badge/size-4.52%20MB-FFB300?style=for-the-badge)](https://vajrax.in)
 
-[⬇️ Download VajraX v2.0.1](https://github.com/VajraXcore/VajraX_Release_2.0/releases/latest/download/app-release.apk) | [🌐 Website](https://vajrax.in) | [📧 Contact](mailto:pbr65.tech@gmail.com)
+[⬇️ Download VajraX v2.0.1](https://github.com/VajraXcore/VajraX_Release_2.0/releases/latest/download/VajraX.apk) | [🌐 Website](https://vajrax.in) | [📧 Contact](mailto:pbr65.tech@gmail.com)
 
 </div>
 
@@ -32,7 +32,7 @@ precision, power, and reliability in every tool.
 
 ## 📱 Download
 
-**[⬇️ Download VajraX v2.0.1 APK](https://github.com/VajraXcore/VajraX_Release_2.0/releases/latest/download/app-release.apk)**
+**[⬇️ Download VajraX v2.0.1 APK](https://github.com/VajraXcore/VajraX_Release_2.0/releases/latest/download/VajraX.apk)**
 
 Also available: [VajraX v1.0.0 (legacy)](https://github.com/VajraXcore/VajraX_Release/releases/latest/download/VajraX-v1.0.0.apk)
 
