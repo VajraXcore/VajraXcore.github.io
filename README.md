@@ -7,12 +7,12 @@
 
 **Professional-grade offline networking and cybersecurity toolkit for Android**
 
-[![Version](https://img.shields.io/badge/version-2.1.0-00D4FF?style=for-the-badge)](https://vajrax.in)
+[![Version](https://img.shields.io/badge/version-2.1.1-00D4FF?style=for-the-badge)](https://vajrax.in)
 [![Platform](https://img.shields.io/badge/platform-Android%208.0%2B-FFB300?style=for-the-badge)](https://vajrax.in)
 [![License](https://img.shields.io/badge/license-Free-00D4FF?style=for-the-badge)](https://vajrax.in)
 [![Size](https://img.shields.io/badge/size-4.41%20MB-FFB300?style=for-the-badge)](https://vajrax.in)
 
-[⬇️ Download VajraX v2.1.0](https://github.com/VajraXcore/VajraX_Release_2.0/releases/latest/download/VajraX.apk) | [🌐 Website](https://vajrax.in) | [📧 Contact](mailto:pbr65.tech@gmail.com)
+[⬇️ Download VajraX v2.1.1](https://github.com/VajraXcore/VajraX_Release_2.0/releases/latest/download/VajraX.apk) | [🌐 Website](https://vajrax.in) | [📧 Contact](mailto:pbr65.tech@gmail.com)
 
 </div>
 
@@ -32,11 +32,11 @@ precision, power, and reliability in every tool.
 
 ## 📱 Download
 
-**[⬇️ Download VajraX v2.1.0 APK](https://github.com/VajraXcore/VajraX_Release_2.0/releases/latest/download/VajraX.apk)**
+**[⬇️ Download VajraX v2.1.1 APK](https://github.com/VajraXcore/VajraX_Release_2.0/releases/latest/download/VajraX.apk)**
 
 Also available: [VajraX v1.0.0 (legacy)](https://github.com/VajraXcore/VajraX_Release/releases/latest/download/VajraX-v1.0.0.apk)
 
-- **Version:** 2.1.0
+- **Version:** 2.1.1
 - **Size:** 4.41 MB
 - **Platform:** Android 8.0+ (API 26)
 - **Target SDK:** 35
@@ -126,7 +126,8 @@ What you calculate in VajraX stays in VajraX.
 | v1.0.0 | ✅ Released (June 2026) | Foundation Release, 31 tools |
 | v2.0.0 | ✅ Released (July 2026) | 5 new engines, 68 tools, 6-layer output, dual export |
 | v2.0.1 | ✅ Released (July 2026) | Route Summarizer fix, traceroute relabel, dependency cleanup |
-| v2.1.0 | ✅ Current (July 2026) | SSH TOFU host-key verification, new VX monogram app icon |
+| v2.1.0 | ✅ Released (July 2026) | SSH TOFU host-key verification, new VX monogram app icon |
+| v2.1.1 | ✅ Current (July 2026) | Corrected IP Reputation database size disclosure (46 actual entries, not ~10,000) |
 | v2.2.0 | 🔄 Upcoming | Windows version (C# + WinUI 3) |
 
 ---
